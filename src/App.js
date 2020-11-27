@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ScrollElement from "./components/ScrollElement";
+import Background from "./components/Background";
+import Home from "./views/Home";
+import Watch from "./views/Watch";
+import Listen from "./views/Listen";
+import Shows from "./views/Shows";
+import Contact from "./views/Contact";
+import Menu from "./components/Menu";
+import { BackgroundProvider } from "./contexts/backgroundContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <BackgroundProvider>
+          <Background></Background>
+          <Menu />
+          <ScrollElement name="home" image="0">
+            <Home />
+          </ScrollElement>
+          <ScrollElement name="Watch" image="1">
+            <Watch />
+          </ScrollElement>
+          <ScrollElement name="Listen" image="2">
+            <Listen />
+          </ScrollElement>
+          <ScrollElement name="shows" image="0">
+            <Shows />
+          </ScrollElement>
+          <ScrollElement name="contact" image="1">
+            <Contact />
+          </ScrollElement>
+        </BackgroundProvider>
+      </div>
+    </>
   );
 }
 
