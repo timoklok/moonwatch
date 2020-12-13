@@ -15,13 +15,21 @@ const links = [
 const ContentContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  > div {
+    width: 40%;
+  }
 `;
 
 const MemberContainer = styled.div`
-  width: max(430px, 60%);
+  width: 50%;
 `;
 
-const Members = styled.div``;
+const Members = styled.div`
+  text-align: right;
+  padding: 20px 0;
+`;
 
 const MemberImages = styled.div`
   display: grid;
@@ -39,7 +47,7 @@ const MemberImages = styled.div`
 const MemberImage = styled.div`
   background-color: white;
   width: 100%;
-  height: 200px;
+  height: 125px;
 
   &:nth-child(1) {
     grid-area: l1;
@@ -56,6 +64,20 @@ const MemberImage = styled.div`
   &:nth-child(5) {
     grid-area: r2;
   }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+`;
+
+const BandName = styled.span`
+  ${baseText}
+`;
+
+const BandNames = styled.span`
+  ${subText}
 `;
 
 const Contact = () => {
@@ -66,16 +88,36 @@ const Contact = () => {
         <LinkList title="Find us via" links={links} />
         <MemberContainer>
           <MemberImages>
-            <MemberImage>a</MemberImage>
-            <MemberImage>b</MemberImage>
-            <MemberImage>c</MemberImage>
-            <MemberImage>d</MemberImage>
-            <MemberImage>e</MemberImage>
+            <MemberImage>
+              <img alt="1" src="images/yvet.jpeg" />
+            </MemberImage>
+            <MemberImage>
+              <img alt="2" src="images/gerben.jpeg" />
+            </MemberImage>
+            <MemberImage>
+              <img alt="3" src="images/hielke.jpeg" />
+            </MemberImage>
+            <MemberImage>
+              <img alt="4" src="images/nils.jpeg" />
+            </MemberImage>
+            <MemberImage>
+              <img alt="5" src="images/timo.jpeg" />
+            </MemberImage>
           </MemberImages>
           <Members>
-            <span>MOONWATCH IS</span>
-            Nils Breunese {`\n`} Yvet Yousef{`\n`} Gerben ‘t Hag{`\n`} Hielke
-            Kortshot{`\n`} Timo Klok
+            <BandName>MOONWATCH IS</BandName>
+            <br />
+            <BandNames>
+              Nils Breunese
+              <br />
+              Yvet Yousef
+              <br />
+              Gerben ‘t Hag
+              <br />
+              Hielke Kortshot
+              <br />
+              Timo Klok
+            </BandNames>
           </Members>
         </MemberContainer>
       </ContentContainer>

@@ -10,8 +10,8 @@ const Box = styled.div`
   padding: 60px 30px;
   // 100vw when smaller then 500px,
   // 80% when larger then 500px
-  /* max 100px */
-  width: min(100vw, max(500px, min(1000px, 80vw)));
+  /* max 1200px */
+  width: min(100vw, max(500px, min(1200px, 80vw)));
   box-sizing: border-box;
 `;
 

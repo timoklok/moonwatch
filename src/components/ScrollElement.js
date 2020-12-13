@@ -13,7 +13,7 @@ const Box = styled.div`
 const OuterBox = styled.div``;
 
 const ScrollElement = (props) => {
-  const { image, name } = props;
+  const { image } = props;
   const outerRef = useRef();
   const background = useContext(BackgroundContext);
 

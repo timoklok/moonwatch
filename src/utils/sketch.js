@@ -18,7 +18,12 @@ export class Sketch {
     this.easing = opts.easing || "easeInOut";
     this.isRunning = false;
     this.container = document.getElementById("testbackground");
-    this.images = ["/images/1.jpg", "/images/2.jpg", "/images/3.jpg"];
+    this.images = [
+      "/images/0.jpg",
+      "/images/1.jpg",
+      "/images/2.jpg",
+      "/images/3.jpg",
+    ];
     this.width = this.container.offsetWidth;
     this.height = this.container.offsetHeight;
     this.container.appendChild(this.renderer.domElement);

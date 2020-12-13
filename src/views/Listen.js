@@ -25,6 +25,7 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: min(100%, 600px);
+  margin-top: 100px;
 `;
 
 const Listen = () => {

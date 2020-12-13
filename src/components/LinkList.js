@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { baseText, subText } from "../components/Text";
 import theme from "../theme/theme";
+import { motion } from "framer-motion";
 
 const LinkListWrapper = styled.div`
   padding: 0 40px;
@@ -19,20 +20,31 @@ const Ul = styled.ul`
   padding: 0;
 `;
 
-const Li = styled.li`
+const Li = styled(motion.li)`
   list-style-type: none;
   margin-bottom: 10px;
 `;
 
-const Link = styled.a`
+const Link = styled(motion.a)`
   ${baseText};
   text-decoration: none;
   letter-spacing: 0.2rem;
   font-size: ${theme.fontSizes.m};
+  position: relative;
 
   &:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
+`;
+
+const LinkBorder = styled(motion.span)`
+  position: absolute;
+  width: 0%;
+  bottom: -1px;
+  left: 0;
+  height: 2px;
+  background-color: white;
+  opacity: 0;
 `;
 
 const Arrow = styled.span`
@@ -45,12 +57,33 @@ const Arrow = styled.span`
 `;
 
 const LinkList = ({ title, links, ...props }) => {
+  const linkVariant = {};
+  const borderVariant = {
+    initial: {
+      opacity: 0,
+      width: "0%",
+    },
+    hover: {
+      opacity: 1,
+      width: "100%",
+      transition: {
+        duration: 0.3,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
     <LinkListWrapper>
       <LinkListHeader>{title}</LinkListHeader>
       <Ul>
         {links.map((link, i) => (
-          <Li key={i}>
+          <Li
+            key={i}
+            whileHover="hover"
+            initital="initial"
+            variants={linkVariant}
+          >
             <Link href={link.url}>
               {" "}
               {link.name}
@@ -66,6 +99,7 @@ const LinkList = ({ title, links, ...props }) => {
                   />
                 </svg>
               </Arrow>
+              <LinkBorder variants={borderVariant} />
             </Link>
           </Li>
         ))}

@@ -5,10 +5,11 @@ const theme = {
     subFont: '"Playfair Display", serif',
   },
   fontSizes: {
-    sm: "0.75rem",
+    xs: "0.8rem",
+    sm: "1rem",
     m: "1.3rem",
     l: "2.5rem",
-    xl: "4.5rem",
+    xl: "3.5rem",
   },
 };
 

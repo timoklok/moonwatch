@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { baseText, subText } from "../components/Text";
+import { baseText } from "../components/Text";
 
 const MenuContainer = styled.div`
   position: fixed;
@@ -13,6 +13,8 @@ const Hamburger = styled.div`
   display: ${(props) => (props.visible ? "block" : "none")};
   width: 50px;
   height: 50px;
+  cursor: pointer;
+
   svg {
     stroke: white;
     fill: white;
@@ -26,7 +28,12 @@ const MenuItems = styled.nav`
 const MenuItem = styled.a`
   display: block;
   cursor: pointer;
+  text-decoration: none;
   ${baseText};
+  line-height: 1.5;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const items = ["home", "watch", "listen", "contact"];
