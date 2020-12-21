@@ -85,7 +85,7 @@ const Contact = () => {
     <ViewBox id="contact">
       <ViewHeader name="Contact"></ViewHeader>
       <ContentContainer>
-        <LinkList title="Find us via" links={links} />
+        <LinkList title="Find us on" links={links} />
         <MemberContainer>
           <MemberImages>
             <MemberImage>

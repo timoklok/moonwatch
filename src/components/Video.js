@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { subText } from "../components/Text";
+import YouTube from "react-youtube";
 
 import mq from "../utils/mq";
 
@@ -32,6 +33,7 @@ const VideoWrapper = styled.div`
 
 const VideoContainer = styled.div`
   position: relative;
+  background-color: black;
   &:before {
     content: "";
     width: 1px;
@@ -47,6 +49,11 @@ const VideoContainer = styled.div`
     display: table;
     clear: both;
   }
+
+  iframe {
+    height: 100%;
+    position: absolute;
+  }
 `;
 
 const VideoName = styled.p`
@@ -59,28 +66,77 @@ const Teaser = styled.div`
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: pink;
   cursor: pointer;
+  background-color: black;
+  background-image: url(${(props) => props.still});
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    polygon,
+    path {
+      fill: #ffffff;
+      opacity: 1;
+      transform-origin: center center;
+      transform: scale(1.06);
+    }
+  }
 `;
 
-const Video = ({ id = "_4CoUa-4DNQ", name = "Reaper" }) => {
+const PlayButton = styled.div`
+  width: 15%;
+  height: auto;
+
+  polygon,
+  path {
+    transition: 0.3s;
+    fill: #ffffff;
+    opacity: 0.8;
+  }
+`;
+
+const Video = ({
+  still = "deimos.png",
+  id = "_4CoUa-4DNQ",
+  name = "Reaper",
+}) => {
+  const opts = {
+    height: "100%",
+    width: "100%",
+    playerVars: {
+      autoplay: 1,
+    },
+  };
+
   const [hasClicked, setHasClicked] = useState(false);
-  const clickHandler = () => setHasClicked(true);
+  const clickHandler = () => {
+    setHasClicked(true);
+  };
+
+  const _onReady = (event) => {
+    // access to player in all event handlers via event.target
+    // event.target.play();
+  };
+
   return (
     <VideoWrapper>
       <VideoContainer>
-        {!hasClicked && <Teaser onClick={clickHandler} />}
-        {hasClicked && (
-          <iframe
-            title={`${name} on Youtube`}
-            width="100%"
-            height="100%"
-            src={`https://www.youtube-nocookie.com/embed/${id}`}
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullscreen
-          ></iframe>
+        {!hasClicked && (
+          <Teaser
+            className={`player-${id}`}
+            still={`./images/${still}`}
+            onClick={clickHandler}
+          >
+            <PlayButton>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                <polygon points="9.33 6.69 9.33 19.39 19.3 13.04 9.33 6.69" />
+              </svg>
+            </PlayButton>
+          </Teaser>
         )}
+        {hasClicked && <YouTube videoId={id} opts={opts} onReady={_onReady} />}
       </VideoContainer>
       <VideoName>{name}</VideoName>
     </VideoWrapper>

@@ -16,7 +16,7 @@ export const mediumText = css`
   text-transform: uppercase;
   color: ${theme.textColor};
   font-size: ${theme.fontSizes.m};
-  font-weight: 400;
+  font-weight: 500;
 `;
 
 export const subText = css`

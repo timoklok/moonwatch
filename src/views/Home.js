@@ -2,6 +2,7 @@ import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import styled from "styled-components";
 import { Title, Description, Kicker } from "../components/Text";
 import ViewBox from "../components/ViewBox";
+import mq from "../utils/mq";
 
 import {
   motion,
@@ -12,20 +13,27 @@ import {
 } from "framer-motion";
 
 const MainDescription1 = styled(Description)`
-  width: min(40%, 65ch);
+  width: 100%;
   align-self: flex-start;
   text-align: left;
   margin: 5vh 0;
+  ${mq.medium`
+    width: min(40%, 65ch);
+   `}
 `;
 
 const MainDescription2 = styled(Description)`
-  width: min(40%, 65ch);
+  width: 100%;
   align-self: flex-end;
   text-align: right;
   margin-bottom: 5vh;
   div {
     margin-bottom: 20px;
   }
+
+  ${mq.medium`
+    width: min(40%, 65ch);
+   `}
 `;
 
 const TitleContainer = styled(motion.div)`
@@ -35,7 +43,7 @@ const TitleContainer = styled(motion.div)`
 `;
 
 const FullContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
