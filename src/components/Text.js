@@ -21,6 +21,7 @@ export const mediumText = css`
 
 export const subText = css`
   font-family: ${theme.fonts.subFont};
+  font-style: italic;
   color: ${theme.textColor};
   font-weight: 100;
 `;
