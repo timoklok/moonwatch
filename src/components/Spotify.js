@@ -10,7 +10,7 @@ const Spotify = () => {
     <SpotifyContainer>
       <iframe
         title="Moonwatch on Spotify"
-        src="https://open.spotify.com/embed/artist/5coFecXXAxcu5mDy8m440V"
+        src="https://open.spotify.com/embed/album/59jrZAPPf0lYRiyIPPMAOV"
         width="300"
         height="380"
         frameBorder="0"

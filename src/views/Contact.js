@@ -4,6 +4,7 @@ import ViewHeader from "../components/ViewHeader";
 import ViewBox from "../components/ViewBox";
 import LinkList from "../components/LinkList";
 import { baseText, subText } from "../components/Text";
+import mq from "../utils/mq";
 
 const links = [
   { name: "Facebook", url: "https://www.facebook.com/moonwatch.band" },
@@ -14,12 +15,21 @@ const links = [
 
 const ContentContainer = styled.div`
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
+  flex-direction: column;
+  padding-top: 60px;
   > div {
+    width: 100%;
+  }
+
+  ${mq.medium`
+  flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+      > div {
     width: 40%;
   }
+   `}
 `;
 
 const MemberContainer = styled.div`
@@ -110,11 +120,11 @@ const Contact = () => {
             <BandNames>
               Nils Breunese
               <br />
-              Yvet Yousef
+              Yvet Youssef
               <br />
-              Gerben ‘t Hag
+              Gerben van ‘t Hag
               <br />
-              Hielke Kortshot
+              Hielke Kortschot
               <br />
               Timo Klok
             </BandNames>

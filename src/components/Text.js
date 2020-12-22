@@ -28,14 +28,14 @@ export const subText = css`
 export const Title = styled.h1`
   ${baseText};
   letter-spacing: 2rem;
-  font-size: ${theme.fontSizes.xl};
+  font-size: 2rem;
   max-width: 100%;
   word-wrap: break-word;
   text-align: center;
   text-indent: 1rem;
   margin-left: 2rem;
-  ${mq.small`
-    font-size: ${theme.fontSizes.l};
+  ${mq.medium`
+    font-size: ${theme.fontSizes.xl};
    `}
 `;
 
@@ -57,4 +57,17 @@ export const Kicker = styled.div`
   font-size: ${theme.fontSizes.xs};
   letter-spacing: 0.3rem;
   text-align: center;
+  line-height: 1.8;
+  span {
+    display: none;
+  }
+  a {
+    display: block;
+  }
+  ${mq.medium`
+  span{ display:inline;}
+  a {
+    display:inline;
+  }
+   `}
 `;

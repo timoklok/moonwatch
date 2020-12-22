@@ -27,7 +27,7 @@ const VideoWrapper = styled.div`
   }
 
   ${mq.medium`
-    margin: 15vh 0;
+    margin: 10vh 0;
    `}
 `;
 

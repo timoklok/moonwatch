@@ -7,7 +7,7 @@ const Box = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: ${(centered) => (centered ? "center" : "space-between")};
-  padding: 60px 30px;
+  padding: 20px 30px;
   // 100vw when smaller then 500px,
   // 80% when larger then 500px
   /* max 1200px */

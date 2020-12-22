@@ -2,11 +2,17 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import { baseText } from "../components/Text";
+import mq from "../utils/mq";
 
 const MenuContainer = styled.div`
   position: fixed;
   top: 10px;
   left: 10px;
+  z-index: 10;
+  ${mq.medium`
+    width: 100%;
+
+   `}
 `;
 
 const Hamburger = styled.div`
@@ -19,10 +25,20 @@ const Hamburger = styled.div`
     stroke: white;
     fill: white;
   }
+
+  ${mq.medium`
+    display: none;
+   `}
 `;
 
 const MenuItems = styled.nav`
   display: ${(props) => (props.visible ? "block" : "none")};
+  ${mq.medium`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   `}
 `;
 
 const MenuItem = styled.a`
@@ -34,6 +50,11 @@ const MenuItem = styled.a`
   &:hover {
     text-decoration: underline;
   }
+  ${mq.medium`
+    margin: 0 20px;
+    font-weight: 400;
+    letter-spacing: 0.3rem; 
+   `}
 `;
 
 const items = ["home", "watch", "listen", "contact"];

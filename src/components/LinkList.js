@@ -4,10 +4,16 @@ import styled from "styled-components";
 import { baseText, subText } from "../components/Text";
 import theme from "../theme/theme";
 import { motion } from "framer-motion";
+import mq from "../utils/mq";
 
 const LinkListWrapper = styled.div`
-  padding: 0 40px;
   margin-bottom: 40px;
+  margin-top: 20px;
+
+  ${mq.medium`
+    margin-top:0;
+    padding: 0 40px;
+   `}
 `;
 
 const LinkListHeader = styled.h3`

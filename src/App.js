@@ -16,7 +16,7 @@ function App() {
         <BackgroundProvider>
           <Background></Background>
           <Menu />
-          <ScrollElement name="home" image="0">
+          <ScrollElement id="home" name="home" image="0">
             <Home />
           </ScrollElement>
           <ScrollElement name="Watch" image="1">
