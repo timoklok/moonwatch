@@ -84,6 +84,7 @@ const MemberImage = styled.div`
 
 const BandName = styled.span`
   ${baseText}
+  font-size:1rem;
 `;
 
 const BandNames = styled.span`
@@ -115,7 +116,10 @@ const Contact = () => {
             </MemberImage>
           </MemberImages>
           <Members>
-            <BandName>MOONWATCH IS</BandName>
+            <BandName>
+              MOONWATCH IS AN INDIE BAND
+              <br /> FROM UTRECHT, NL.
+            </BandName>
             <br />
             <BandNames>
               Nils Breunese
