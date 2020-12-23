@@ -12,9 +12,9 @@ const Watch = () => {
   return (
     <ViewBox id="watch">
       <ViewHeader name="Watch"></ViewHeader>
-      <Video still="reaper.png" id="vuMxCRZ43vY" name="Reaper (2020)" />
-      <Video still="textures.png" id="O7MJwu36buc" name="Textures (2020)" />
-      <Video still="deimos.png" id="_4CoUa-4DNQ" name="Deimos (2019)" />
+      <Video still="reaper.jpg" id="vuMxCRZ43vY" name="Reaper (2020)" />
+      <Video still="textures.jpg" id="O7MJwu36buc" name="Textures (2020)" />
+      <Video still="deimos.jpg" id="_4CoUa-4DNQ" name="Deimos (2019)" />
     </ViewBox>
   );
 };

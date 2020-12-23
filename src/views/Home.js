@@ -44,6 +44,7 @@ const TitleContainer = styled(motion.div)`
 
 const FullContainer = styled.div`
   width: 90%;
+  left: 5%;
   height: 80vh;
   top: 10vh;
   position: relative;

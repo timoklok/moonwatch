@@ -36,6 +36,8 @@ export const Title = styled.h1`
   text-indent: 1rem;
   margin-left: 2rem;
   ${mq.medium`
+    text-indent: 0rem;
+    margin-left: 0rem;
     font-size: ${theme.fontSizes.xl};
    `}
 `;
