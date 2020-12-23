@@ -189,7 +189,7 @@ const Home = () => {
   // const arrowOpacity = useMotionTemplate`${arrowOpacityAmount}`;
 
   return (
-    <>
+    <div id="home">
       <FullContainer>
         <TitleContainer style={{ filter: titleBlur }} ref={titleRef}>
           <Title>
@@ -256,7 +256,7 @@ const Home = () => {
           </motion.div>
         </MainDescription2>
       </ViewBox>
-    </>
+    </div>
   );
 };
 
