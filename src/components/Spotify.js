@@ -9,14 +9,19 @@ const Spotify = () => {
   return (
     <SpotifyContainer>
       <iframe
-        title="Moonwatch on Spotify"
-        src="https://open.spotify.com/embed/album/59jrZAPPf0lYRiyIPPMAOV"
+        title="Moonwatch on Bandcamp"
         width="300"
-        height="380"
+        height="470"
         frameBorder="0"
         allowtransparency="true"
         allow="encrypted-media"
-      ></iframe>
+        src="https://bandcamp.com/EmbeddedPlayer/album=496263388/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/"
+        seamless
+      >
+        <a href="https://moonwatch.bandcamp.com/album/refraction-ep">
+          Refraction EP by Moonwatch
+        </a>
+      </iframe>
     </SpotifyContainer>
   );
 };

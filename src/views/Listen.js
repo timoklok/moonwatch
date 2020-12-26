@@ -8,12 +8,12 @@ import LinkList from "../components/LinkList";
 const links = [
   { name: "Bandcamp", url: "https://moonwatch.bandcamp.com/" },
   {
-    name: "Apple Music",
-    url: "https://music.apple.com/nl/artist/moonwatch/1473655914",
-  },
-  {
     name: "Spotify",
     url: "https://open.spotify.com/artist/5coFecXXAxcu5mDy8m440V",
+  },
+  {
+    name: "Apple Music",
+    url: "https://music.apple.com/nl/artist/moonwatch/1473655914",
   },
   {
     name: "Youtube",
@@ -34,7 +34,7 @@ const Listen = () => {
       <ViewHeader name="Listen"></ViewHeader>
       <ContentWrapper>
         <Spotify />
-        <LinkList title="Or on" links={links} />
+        <LinkList title="Listen on" links={links} />
       </ContentWrapper>
     </ViewBox>
   );
