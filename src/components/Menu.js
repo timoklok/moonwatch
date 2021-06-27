@@ -57,7 +57,7 @@ const MenuItem = styled.a`
    `}
 `;
 
-const items = ["home", "watch", "listen", "contact"];
+const items = ["home", "watch", "listen", "shows", "contact"];
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);

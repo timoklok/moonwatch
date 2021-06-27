@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useMemo } from "react";
+import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { BackgroundContext } from "../contexts/backgroundContext";
 
@@ -14,16 +14,12 @@ const BackgroundBox = styled.div`
   opacity: 0.5;
 `;
 
-const Background = () => {
-  const background = useContext(BackgroundContext);
-
-  const sketch = useMemo(() => {
-    return new Sketch({
-      debug: true,
-      uniforms: {
-        intensity: { value: 0.3, type: "f", min: 0, max: 2 },
-      },
-      fragment: `
+const sketch = new Sketch({
+  debug: true,
+  uniforms: {
+    intensity: { value: 0.3, type: "f", min: 0, max: 2 },
+  },
+  fragment: `
 		uniform float time;
 		uniform float progress;
 		uniform float width;
@@ -55,12 +51,14 @@ const Background = () => {
 		}
 
 	`,
-    });
-  }, []);
+});
+
+const Background = () => {
+  const background = useContext(BackgroundContext);
 
   useEffect(() => {
-    sketch.goto(background.imageNumber);
-  }, [background.imageNumber, background, sketch]);
+    sketch && sketch.goto(background.imageNumber);
+  }, [background.imageNumber, background]);
 
   return <BackgroundBox imageNumber={background.imageNumber}></BackgroundBox>;
 };
