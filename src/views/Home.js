@@ -1,6 +1,7 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import styled from "styled-components";
 import { Title, Description, Kicker } from "../components/Text";
+import Form from "../components/Form";
 import ViewBox from "../components/ViewBox";
 import mq from "../utils/mq";
 
@@ -40,6 +41,9 @@ const TitleContainer = styled(motion.div)`
   margin: 35vh 0;
   filter: blur(4px);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const FullContainer = styled.div`
@@ -65,6 +69,12 @@ const Arrow = styled(motion.div)`
   svg {
     transform: rotate(90deg);
   }
+`;
+
+const FormContainer = styled.div`
+  max-width: 500px;
+  margin-top: 40px;
+  text-align: center;
 `;
 
 const Home = () => {
@@ -201,6 +211,9 @@ const Home = () => {
           <Kicker>
             new EP 'Refraction' <span>-</span> <a href="#listen">out now</a>
           </Kicker>
+          <FormContainer>
+            <Form formText="leave your email to occasionally receive emails about new releases and live-shows:" />
+          </FormContainer>
         </TitleContainer>
         <Arrow ref={arrowRef} style={{ opacity: arrowOpacityAmount }}>
           <svg

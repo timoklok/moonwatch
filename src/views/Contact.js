@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ViewHeader from "../components/ViewHeader";
 import ViewBox from "../components/ViewBox";
 import LinkList from "../components/LinkList";
+import Form from "../components/Form";
 import { baseText, subText } from "../components/Text";
 import mq from "../utils/mq";
 
@@ -96,7 +97,10 @@ const Contact = () => {
     <ViewBox id="contact">
       <ViewHeader name="Contact"></ViewHeader>
       <ContentContainer>
-        <LinkList title="Find us on" links={links} />
+        <div>
+          <LinkList title="Find us on" links={links} />
+          <Form />
+        </div>
         <MemberContainer>
           <MemberImages>
             <MemberImage>
