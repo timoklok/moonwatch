@@ -1,7 +1,7 @@
 import theme from "../theme/theme";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import mq from "../utils/mq";
-import { baseText, subText } from "../components/Text";
+import { baseText } from "../components/Text";
 
 const FormContainer = styled.form`
   margin-bottom: 40px;
