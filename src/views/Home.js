@@ -212,7 +212,7 @@ const Home = () => {
             new EP 'Refraction' <span>-</span> <a href="#listen">out now</a>
           </Kicker>
           <FormContainer>
-            <Form formText="leave your email to occasionally receive emails about new releases and live-shows:" />
+            <Form formText="leave your email to occasionally receive emails about new releases and live shows:" />
           </FormContainer>
         </TitleContainer>
         <Arrow ref={arrowRef} style={{ opacity: arrowOpacityAmount }}>

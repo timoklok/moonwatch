@@ -60,7 +60,7 @@ const ButtonContainer = styled.div`
 `;
 
 const Form = ({
-  formText = "Or leave your email to occasionally receive emails about new releases and live-shows:",
+  formText = "Or leave your email to occasionally receive emails about new releases and live shows:",
 }) => {
   return (
     <FormContainer
