@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const SpotifyContainer = styled.div`
+const PlayerContainer = styled.div`
   text-align: left;
 `;
 
-const Spotify = () => {
+const EmbeddedPlayer = () => {
   return (
-    <SpotifyContainer>
+    <PlayerContainer>
       <iframe
         title="Moonwatch on Bandcamp"
         width="300"
@@ -22,8 +22,8 @@ const Spotify = () => {
           Refraction EP by Moonwatch
         </a>
       </iframe>
-    </SpotifyContainer>
+    </PlayerContainer>
   );
 };
 
-export default Spotify;
+export default EmbeddedPlayer;

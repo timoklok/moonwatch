@@ -57,10 +57,17 @@ export const Description = styled.div`
 
 export const Kicker = styled.div`
   ${mediumText};
+  display: flex;
+  flex-direction: column;
   font-size: ${theme.fontSizes.xs};
   letter-spacing: 0.3rem;
   text-align: center;
   line-height: 1.8;
+
+  img {
+    width: 150px;
+  }
+
   span {
     display: none;
   }

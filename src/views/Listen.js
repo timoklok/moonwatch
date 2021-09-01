@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ViewHeader from "../components/ViewHeader";
 import ViewBox from "../components/ViewBox";
-import Spotify from "../components/Spotify";
+import EmbeddedPlayer from "../components/EmbeddedPlayer";
 import LinkList from "../components/LinkList";
 
 const links = [
@@ -33,7 +33,7 @@ const Listen = () => {
     <ViewBox id="listen">
       <ViewHeader name="Listen"></ViewHeader>
       <ContentWrapper>
-        <Spotify />
+        <EmbeddedPlayer />
         <LinkList title="Listen on" links={links} />
       </ContentWrapper>
     </ViewBox>
