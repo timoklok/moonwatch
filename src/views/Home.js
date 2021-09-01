@@ -210,12 +210,12 @@ const Home = () => {
           </Title>
           <Kicker>
             {/* UNCOMMENT THIS TO SHOW AN ANOUNCEMENT AT THE TOP OF THE PAGE*/}
-            <a title="listen to kármán line EP" href="#listen">
+            {/* <a title="listen to kármán line EP" href="#listen">
               <img alt="kármán line ep cover" src="images/karman-line.jpg" />
             </a>
             <p>
               new EP 'Kármán Line' <span>-</span> <a href="#listen">out now</a>
-            </p>
+            </p> */}
           </Kicker>
           <FormContainer>
             <Form formText="leave your email to occasionally receive emails about new releases and live shows:" />

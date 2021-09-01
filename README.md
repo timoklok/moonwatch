@@ -7,7 +7,7 @@ install dependencies: `yarn install`
 start local server on port 3000: `yarn start`
 
 ## Getting it live
-run `yarn test` and make sure there are no errors
+run `yarn build` and make sure there are no warnings
 push code to master branch, Netlify should do the rest
 
 ## Getting Karman Line Live:
