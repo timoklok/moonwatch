@@ -7,8 +7,7 @@ const Watch = () => {
   return (
     <ViewBox id="watch">
       <ViewHeader name="Watch"></ViewHeader>
-      {/* UNCOMMENT THIS TO SHOW THE VIDEO */}
-      {/* <Video still="asun.jpg" id="TsJWN7gksyo" name="A Sun Came Up (2021)" /> */}
+      <Video still="asun.jpg" id="sESwaH5IX5I" name="A Sun Came Up (2021)" />
       <Video still="reaper.jpg" id="vuMxCRZ43vY" name="Reaper (2020)" />
       <Video still="textures.jpg" id="O7MJwu36buc" name="Textures (2020)" />
       <Video still="deimos.jpg" id="_4CoUa-4DNQ" name="Deimos (2019)" />
