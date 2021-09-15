@@ -12,5 +12,5 @@ Build with yarn.
 
 ## Getting Kármán Line live
 * ☑️ Uncomment video in: Watch.js
-* Change the Bandcamp player link: EmbeddedPlayer.js
-* Uncomment the announcment in Home.js
+* ☑️ Change the Bandcamp player link: EmbeddedPlayer.js
+* ☑️ Uncomment the announcment in Home.js
