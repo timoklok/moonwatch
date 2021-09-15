@@ -210,7 +210,7 @@ const Home = () => {
           </Title>
           <Kicker>
             <a title="listen to Kármán Line" href="#listen">
-              <img alt="Kármán Line cover image" src="images/karman-line.jpg" />
+              <img alt="Kármán Line cover" src="images/karman-line.jpg" />
             </a>
             <p>
               new EP 'Kármán Line' <span>-</span> <a href="#listen">out now</a>
