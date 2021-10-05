@@ -25,7 +25,7 @@ const Shows = () => {
   const showList = [
     {
       text: "Living room concert, Utrecht with Coaster",
-      date: "20211031 15:00"
+      date: "20211031 15:00",
     },
     {
       text: "@Vechtclub, Utrecht",
@@ -59,12 +59,13 @@ const Shows = () => {
               );
             } else {
               return (
-                <Show href={show.ticketLink}>
-                  {showDate.format("ddd, MMMM DD YYYY -  HH:mm")} {show.text} (
-                  <a title="tickets" href={show.ticketLink}>
-                    tickets
-                  </a>
-                  )
+                <Show>
+                  {showDate.format("ddd, MMMM DD YYYY -  HH:mm")} {show.text}{" "}
+                  {show.ticketLink && (
+                    <a title="tickets" href={show.ticketLink}>
+                      tickets
+                    </a>
+                  )}
                 </Show>
               );
             }
