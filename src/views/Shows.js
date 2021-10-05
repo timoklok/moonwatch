@@ -24,6 +24,10 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
+      text: "Living room concert, Utrecht with Coaster",
+      date: "20211031 15:00"
+    },
+    {
       text: "@Vechtclub, Utrecht",
       ticketLink:
         "https://www.eventbrite.nl/e/tickets-podiumdorst-5-juli-moonwatch-160727691853",
