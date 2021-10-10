@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ViewHeader from "../components/ViewHeader";
 import ViewBox from "../components/ViewBox";
-import EmbeddedPlayer from "../components/EmbeddedPlayer";
+import Release from "../components/Release";
 import LinkList from "../components/LinkList";
 
 const links = [
@@ -24,18 +24,22 @@ const links = [
 const ContentWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  width: min(100%, 600px);
-  margin-top: 100px;
+  width: min(100%, 900px);
+  margin-top: 20px;
+  margin-bottom: 50px;
 `;
 
 const Listen = () => {
   return (
     <ViewBox id="listen">
       <ViewHeader name="Listen"></ViewHeader>
+
       <ContentWrapper>
-        <EmbeddedPlayer />
-        <LinkList title="Listen on" links={links} />
+        <Release img="karman-cover.jpg" txt="Kármán Line (EP) - 2021" />
+        <Release img="refraction-cover.jpg" txt="Refraction EP - 2020" />
+        <Release img="deimos-cover.jpg" txt="Deimos (single) - 2019" />
       </ContentWrapper>
+      <LinkList title="Listen on" links={links} />
     </ViewBox>
   );
 };
