@@ -49,17 +49,17 @@ const Shows = () => {
       {showList.length > 0 && (
         <ViewBox id="shows">
           <ViewHeader name="Shows"></ViewHeader>
-          {showList.slice(0.1).map((show) => {
+          {showList.slice(0.1).map((show, idx) => {
             const showDate = dayjs(show.date, "YYYYMMDD HH:MM");
             if (showDate < today) {
               return (
-                <PastShow>
+                <PastShow key={idx}>
                   {showDate.format("ddd, MMMM DD YYYY")} {show.text}
                 </PastShow>
               );
             } else {
               return (
-                <Show>
+                <Show key={idx}>
                   {showDate.format("ddd, MMMM DD YYYY -  HH:mm")} {show.text}{" "}
                   {show.ticketLink && (
                     <a title="tickets" href={show.ticketLink}>

@@ -70,7 +70,7 @@ const Form = ({
       onsubmit="window.open('https://tinyletter.com/moonwatch', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
     >
       <p>
-        <label for="tlemail">{formText}</label>
+        <label labelfor="tlemail">{formText}</label>
       </p>
       <ButtonContainer>
         <input
