@@ -122,7 +122,7 @@ const Contact = () => {
           <Members>
             <BandName>
               MOONWATCH IS AN INDIE BAND
-              <br /> FROM UTRECHT, NL.
+              <br /> FROM UTRECHT, NL
             </BandName>
             <br />
             <BandNames>
