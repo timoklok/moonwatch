@@ -8,17 +8,20 @@ import { baseText, subText } from "../components/Text";
 import mq from "../utils/mq";
 
 const links = [
-  { name: "Bandcamp", url: "https://moonwatch.bandcamp.com/" },
+  {
+    name: "Bandcamp",
+    url: "https://moonwatch.bandcamp.com/",
+  },
   {
     name: "Spotify",
     url: "https://open.spotify.com/artist/5coFecXXAxcu5mDy8m440V",
   },
   {
     name: "Apple Music",
-    url: "https://music.apple.com/nl/artist/moonwatch/1473655914",
+    url: "https://music.apple.com/artist/moonwatch/1473655914",
   },
   {
-    name: "Youtube",
+    name: "YouTube",
     url: "https://www.youtube.com/channel/UC_m3AkdIG4eVuEUzi2H77Hw",
   },
   {
@@ -27,7 +30,7 @@ const links = [
   },
   {
     name: "Deezer",
-    url: "https://www.deezer.com/en/artist/70172652",
+    url: "https://www.deezer.com/artist/70172652",
   },
   {
     name: "Amazon",
@@ -47,14 +50,14 @@ const releases = [
       },
       {
         name: "Spotify",
-        url: "https://open.spotify.com/album/7HHeGaCByOzikGXhHjE3BQ?si=f096cbb06f99415b",
+        url: "https://open.spotify.com/album/7HHeGaCByOzikGXhHjE3BQ",
       },
       {
         name: "Apple Music",
-        url: "https://music.apple.com/nl/album/k%C3%A1rm%C3%A1n-line-ep/1585872780",
+        url: "https://music.apple.com/album/k%C3%A1rm%C3%A1n-line-ep/1585872780",
       },
       {
-        name: "Youtube",
+        name: "YouTube",
         url: "https://www.youtube.com/watch?v=sESwaH5IX5I&list=PLDly_aBW4C5OqvvyT25Fwgs6Fx4SiXMx5",
       },
       {
@@ -63,7 +66,7 @@ const releases = [
       },
       {
         name: "Deezer",
-        url: "https://www.deezer.com/en/album/258842602",
+        url: "https://www.deezer.com/album/258842602",
       },
       {
         name: "Amazon",
@@ -82,14 +85,14 @@ const releases = [
       },
       {
         name: "Spotify",
-        url: "https://open.spotify.com/album/59jrZAPPf0lYRiyIPPMAOV?si=ziPVtSkFQhW12LTF5uyy1g&dl_branch=1",
+        url: "https://open.spotify.com/album/59jrZAPPf0lYRiyIPPMAOV",
       },
       {
         name: "Apple Music",
-        url: "https://music.apple.com/nl/album/refraction-ep/1545999872",
+        url: "https://music.apple.com/album/refraction-ep/1545999872",
       },
       {
-        name: "Youtube",
+        name: "YouTube",
         url: "https://www.youtube.com/watch?v=vuMxCRZ43vY&list=PLDly_aBW4C5MFfHgDACt_-0rMiez0MiQJ",
       },
       {
@@ -98,7 +101,7 @@ const releases = [
       },
       {
         name: "Deezer",
-        url: "https://www.deezer.com/en/album/195020922",
+        url: "https://www.deezer.com/album/195020922",
       },
       {
         name: "Amazon",
@@ -111,18 +114,21 @@ const releases = [
     shortTitle: "Deimos",
     cover: "deimos-cover.jpg",
     links: [
-      { name: "Bandcamp", url: "https://moonwatch.bandcamp.com/track/deimos" },
+      {
+        name: "Bandcamp",
+        url: "https://moonwatch.bandcamp.com/track/deimos",
+      },
       {
         name: "Spotify",
-        url: "https://open.spotify.com/album/0VDvHNRi3CuzHh8JdyKrLa?si=5UsGF-VlSjuNuHa-2IVBrQ&dl_branch=1V",
+        url: "https://open.spotify.com/album/0VDvHNRi3CuzHh8JdyKrLa",
       },
       {
         name: "Apple Music",
-        url: "https://music.apple.com/nl/album/deimos-single/1473851055",
+        url: "https://music.apple.com/album/deimos-single/1473851055",
       },
       {
-        name: "Youtube",
-        url: "https://www.youtube.com/watch?v=_4CoUa-4DNQ&list=PLDly_aBW4C5PgfD_xNFPcLk_kId9--NwE&index=2",
+        name: "YouTube",
+        url: "https://www.youtube.com/watch?v=_4CoUa-4DNQ&list=PLDly_aBW4C5PgfD_xNFPcLk_kId9--NwE",
       },
       {
         name: "Tidal",
@@ -130,7 +136,7 @@ const releases = [
       },
       {
         name: "Deezer",
-        url: "https://www.deezer.com/en/album/104627142",
+        url: "https://www.deezer.com/album/104627142",
       },
       {
         name: "Amazon",
