@@ -25,21 +25,21 @@ const Shows = () => {
   const showList = [
     {
       text: "Living room concert, Utrecht with Coaster (sold out)",
-      date: "20211031 15:00",
+      date: "2021-10-31 15:00",
     },
     {
-      text: "@Vechtclub, Utrecht (sold out)",
+      text: "Vechtclub XL, Utrecht (sold out)",
       ticketLink:
         "https://www.eventbrite.nl/e/tickets-podiumdorst-5-juli-moonwatch-160727691853",
-      date: "20210705 21:00",
+      date: "2021-07-05 21:00",
     },
     {
-      text: "@Brewpub De Kromme Haring, Utrecht with Mevrouw Tamara",
-      date: "20200125 21:00",
+      text: "Brewpub De Kromme Haring, Utrecht with Mevrouw Tamara",
+      date: "2020-01-25 21:00",
     },
     {
-      text: "OPEN @De Helling, Utrecht with Kittiwake",
-      date: "20191127 21:00",
+      text: "OPEN @ De Helling, Utrecht with Kittiwake",
+      date: "2019-11-27 21:00",
     },
   ];
   const today = dayjs();
@@ -50,17 +50,17 @@ const Shows = () => {
         <ViewBox id="shows">
           <ViewHeader name="Shows"></ViewHeader>
           {showList.slice(0.1).map((show, idx) => {
-            const showDate = dayjs(show.date, "YYYYMMDD HH:MM");
+            const showDate = dayjs(show.date, "YYYY-MM-DD HH:MM");
             if (showDate < today) {
               return (
                 <PastShow key={idx}>
-                  {showDate.format("ddd, MMMM DD YYYY")} {show.text}
+                  {showDate.format("ddd D MMM YYYY HH:mm - ")} {show.text}
                 </PastShow>
               );
             } else {
               return (
                 <Show key={idx}>
-                  {showDate.format("ddd, MMMM DD YYYY -  HH:mm")} {show.text}{" "}
+                  {showDate.format("ddd D MMM YYYY HH:mm - ")} {show.text}{" "}
                   {show.ticketLink && (
                     <a title="tickets" href={show.ticketLink}>
                       tickets
