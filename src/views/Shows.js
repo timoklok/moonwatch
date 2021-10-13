@@ -54,13 +54,13 @@ const Shows = () => {
             if (showDate < today) {
               return (
                 <PastShow key={idx}>
-                  {showDate.format("ddd D MMM YYYY HH:mm - ")} {show.text}
+                  {showDate.format("ddd D MMMM YYYY HH:mm - ")} {show.text}
                 </PastShow>
               );
             } else {
               return (
                 <Show key={idx}>
-                  {showDate.format("ddd D MMM YYYY HH:mm - ")} {show.text}{" "}
+                  {showDate.format("ddd D MMMM YYYY HH:mm - ")} {show.text}{" "}
                   {show.ticketLink && (
                     <a title="tickets" href={show.ticketLink}>
                       tickets
