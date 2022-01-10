@@ -24,6 +24,10 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
+      text: "dB's, Utrecht, support for The Telescopes (UK)",
+      date: "2022-03-01 20:30",
+    },
+    {
       text: "Living room concert, Utrecht with Coaster (sold out)",
       date: "2021-10-31 15:00",
     },
