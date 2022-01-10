@@ -25,6 +25,7 @@ const Shows = () => {
   const showList = [
     {
       text: "dB's, Utrecht, support for The Telescopes (UK)",
+      ticketLink: "https://dbs.stager.nl/web/tickets/111125511",
       date: "2022-03-01 20:30",
     },
     {
