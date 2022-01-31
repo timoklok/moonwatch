@@ -24,9 +24,9 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
-      text: "dB's, Utrecht, support for The Telescopes (UK)",
-      ticketLink: "https://dbs.stager.nl/web/tickets/111125511",
-      date: "2022-03-01 20:30",
+      text: "dB's, Utrecht, support for Vinyl William (US)",
+      ticketLink: "https://dbs.stager.nl/web/tickets/111139040",
+      date: "2022-03-25 20:30",
     },
     {
       text: "Living room concert, Utrecht with Coaster (sold out)",
