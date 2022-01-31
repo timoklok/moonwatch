@@ -24,7 +24,7 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
-      text: "dB's, Utrecht, support for Vinyl William (US)",
+      text: "dB's, Utrecht, support for Vinyl Williams (US)",
       ticketLink: "https://dbs.stager.nl/web/tickets/111139040",
       date: "2022-03-25 20:30",
     },
