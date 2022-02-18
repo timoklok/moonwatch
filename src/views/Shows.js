@@ -25,7 +25,7 @@ const Shows = () => {
   const showList = [
     {
       text: "dB's, Utrecht, support for Vinyl Williams",
-      ticketLink: "https://dbs.stager.nl/web/tickets/111139040",
+      ticketLink: "https://www.dbstudio.nl/event/vinyl-williams-usa-support/",
       date: "2022-03-25 20:30",
     },
     {
