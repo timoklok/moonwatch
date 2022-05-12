@@ -12,7 +12,7 @@ const LinkListWrapper = styled.div`
 
   ${mq.medium`
     margin-top:0;
-    padding: 0 40px;
+    padding: 0 0 0 40px;
    `}
 `;
 

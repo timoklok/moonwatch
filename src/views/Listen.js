@@ -152,6 +152,7 @@ const ContentWrapper = styled.div`
   width: min(100%, 900px);
   margin-top: 20px;
   margin-bottom: 50px;
+  justify-content: center;
 `;
 
 const ReleaseLinks = styled.div`
