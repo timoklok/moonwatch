@@ -44,7 +44,7 @@ const Bio = () => {
   return (
     <ViewBox id="bio">
       <ViewHeader name="Bio"></ViewHeader>
-      <Bandphoto alt="moonwatch bandphoto" src="images/moonwatchband.jpg" />
+      <Bandphoto alt="moonwatch bandphoto" src="images/moonwatchband-new.jpg" />
 
       <MainDescription1>
         Moonwatch plays layered dream indie pop, merging spellbinding melodies
