@@ -55,9 +55,9 @@ const Bio = () => {
         }
       </MainDescription1>
       <MainDescription2>
-        Ethereal vocals, echoing guitars, modulating synth paths, screaming guitar solos.
+        Ethereal vocals, echoing guitars, modulating synth pads.
         They've been listening to bands like Slowdive, The War on Drugs and Warpaint.
-        They don’t know where they’ll land, but the journey there has
+        Moonwatch don’t know where they’ll land, but the journey there has
         mesmerizing views.
       </MainDescription2>
     </ViewBox>
