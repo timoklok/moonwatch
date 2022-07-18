@@ -7,11 +7,14 @@ import Form from "../components/Form";
 import { baseText, subText } from "../components/Text";
 import mq from "../utils/mq";
 
-const links = [
+const email_links = [
+  { name: "E-mail", url: "mailto:hello@moonwatch.band" },
+];
+
+const social_media_links = [
   { name: "Facebook", url: "https://www.facebook.com/moonwatch.band" },
   { name: "Instagram", url: "https://www.instagram.com/moonwatch.band/" },
   { name: "Twitter", url: "https://twitter.com/moonwatchband" },
-  { name: "Mail", url: "mailto:hello@moonwatch.band" },
 ];
 
 const ContentContainer = styled.div`
@@ -98,7 +101,8 @@ const Contact = () => {
       <ViewHeader name="Contact"></ViewHeader>
       <ContentContainer>
         <div>
-          <LinkList title="Find us on" links={links} />
+          <LinkList title="Send us a message" links={email_links} />
+          <LinkList title="Find us on" links={social_media_links} />
           <Form />
         </div>
         <MemberContainer>
@@ -121,8 +125,8 @@ const Contact = () => {
           </MemberImages>
           <Members>
             <BandName>
-              MOONWATCH IS AN INDIE BAND
-              <br /> FROM UTRECHT, NL, EARTH
+              Moonwatch is a celestial dream pop indie rock band
+              <br /> from Utrecht, NL, Earth
             </BandName>
             <br />
             <BandNames>
