@@ -79,7 +79,7 @@ const Home = () => {
             <img alt="Kármán Line cover" src="images/karman-line.jpg" />
           </a>
           <p>
-            new EP 'Kármán Line' <span>-</span> <a href="#listen">out now</a>
+            EP 'Kármán Line' <span>-</span> <a href="#listen">out now</a>
           </p>
         </Kicker>
         <FormContainer>
