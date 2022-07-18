@@ -125,7 +125,8 @@ const Contact = () => {
           </MemberImages>
           <Members>
             <BandName>
-              Moonwatch is a celestial dream pop indie rock band
+              Moonwatch is a celestial
+              <br /> dream pop indie rock band
               <br /> from Utrecht, NL, Earth
             </BandName>
             <br />
