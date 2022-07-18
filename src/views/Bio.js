@@ -55,7 +55,7 @@ const Bio = () => {
         }
       </MainDescription1>
       <MainDescription2>
-        Ethereal vocals, echoing guitars, modulating synth pads.
+        Ethereal vocals, echoing guitars, lush synth pads.
         They've been listening to bands like Slowdive, The War on Drugs and Warpaint.
         Moonwatch don’t know where they’ll land, but the journey there has
         mesmerizing views.
