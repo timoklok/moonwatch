@@ -47,14 +47,16 @@ const Bio = () => {
       <Bandphoto alt="moonwatch bandphoto" src="images/moonwatchband-new.jpg" />
 
       <MainDescription1>
-        Moonwatch plays layered dream indie pop, merging spellbinding melodies
-        with reverb-drenched textures to convey the moods of the night sky.
+        Moonwatch plays celestial dream pop indie rock, merging spellbinding melodies
+        with psychedelic reverb-drenched textures to convey the moods of the night sky.
         {
           // eslint-disable-next-line
           /* <LinkList links={biolink} /> */
         }
       </MainDescription1>
       <MainDescription2>
+        Ethereal vocals, echoing guitars, modulating synth paths, screaming guitar solos.
+        They've been listening to bands like Slowdive, The War on Drugs and Warpaint.
         They don’t know where they’ll land, but the journey there has
         mesmerizing views.
       </MainDescription2>
