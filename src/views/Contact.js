@@ -121,7 +121,7 @@ const Contact = () => {
           </MemberImages>
           <Members>
             <BandName>
-              MOONWATCH IS AN INDIE BAND
+              MOONWATCH IS AN DREAMPOP BAND
               <br /> FROM UTRECHT, NL, EARTH
             </BandName>
             <br />

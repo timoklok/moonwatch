@@ -33,7 +33,7 @@ const MainDescription2 = styled(Description)`
 `;
 
 const Bandphoto = styled.img`
-  max-width: 500px;
+  width: min(500px, 100%);
 `;
 
 // VERVANG DEZE MET EEN PDF
