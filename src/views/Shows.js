@@ -13,7 +13,6 @@ const ShowCSS = css`
 `;
 const PastShow = styled.span`
   ${ShowCSS}
-  text-decoration: line-through;
   opacity: 0.4;
 `;
 
