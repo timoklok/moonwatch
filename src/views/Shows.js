@@ -37,6 +37,10 @@ const Shows = () => {
       date: "2022-03-25 20:30",
     },
     {
+      text: "Vechtclub XL Bunker, Utrecht",
+      date: "2022-03-05 20:30",
+    },
+    {
       text: "Living room concert, Utrecht with Coaster (sold out)",
       date: "2021-10-31 15:00",
     },
