@@ -24,6 +24,10 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
+      text: "Moira, Utrecht with Hushed Hands",
+      date: "2022-10-22 21:00",
+    },
+    {
       text: "dB's, Utrecht, support for Acid Mothers Temple (sold out)",
       ticketLink: "https://www.dbstudio.nl/event/acid-mothers-temple-japan/",
       date: "2022-10-04 20:00",
