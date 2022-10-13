@@ -22,7 +22,7 @@ const links = [
   },
   {
     name: "YouTube",
-    url: "https://www.youtube.com/channel/UC_m3AkdIG4eVuEUzi2H77Hw",
+    url: "https://www.youtube.com/@moonwatchband",
   },
   {
     name: "Tidal",
