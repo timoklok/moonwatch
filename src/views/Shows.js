@@ -24,41 +24,48 @@ const Shows = () => {
   const showList = [
     {
       date: "2022-10-22 21:00",
-      text: "Moira, Utrecht, with Hushed Hands",
+      location: "Moira, Utrecht",
+      alsoPlaying: "Hushed Hands",
       link: "https://www.facebook.com/events/1605758329843165",
-
     },
     {
       date: "2022-10-04 20:00",
-      text: "dB's, Utrecht, support for Acid Mothers Temple (sold out)",
+      location: "dB's, Utrecht",
+      alsoPlaying: "Acid Mothers Temple",
       link: "https://www.dbstudio.nl/event/acid-mothers-temple-japan/",
-
+      soldOut: true,
     },
     {
       date: "2022-03-25 20:30",
-      text: "dB's, Utrecht, support for Vinyl Williams",
+      location: "dB's, Utrecht",
+      alsoPlaying: "Vinyl Williams",
       link: "https://www.dbstudio.nl/event/vinyl-williams-usa-support/",
     },
     {
       date: "2022-03-05 20:30",
-      text: "Vechtclub XL Bunker, Utrecht",
+      location: "Vechtclub XL Bunker, Utrecht",
     },
     {
       date: "2021-10-31 15:00",
-      text: "Living room concert, Utrecht, with Coaster (sold out)",
+      location: "Living room concert, Utrecht",
+      alsoPlaying: "Coaster",
+      soldOut: true,
     },
     {
       date: "2021-07-05 21:00",
-      text: "Vechtclub XL, Utrecht (sold out)",
+      location: "Vechtclub XL, Utrecht",
       link: "https://www.eventbrite.nl/e/tickets-podiumdorst-5-juli-moonwatch-160727691853",
+      soldOut: true,
     },
     {
       date: "2020-01-25 21:00",
-      text: "Brewpub De Kromme Haring, Utrecht, with Mevrouw Tamara",
+      location: "Brewpub De Kromme Haring, Utrecht",
+      alsoPlaying: "Mevrouw Tamara",
     },
     {
       date: "2019-11-27 21:00",
-      text: "OPEN @ De Helling, Utrecht, with Kittiwake",
+      location: "De Helling, Utrecht",
+      alsoPlaying: "Kittiwake"
     },
   ];
   const today = dayjs();
@@ -73,15 +80,27 @@ const Shows = () => {
             if (showDate < today) {
               return (
                 <PastShow key={idx}>
-                  {showDate} - {show.text}
+                  {showDate} - {show.location}
+                  {show.alsoPlaying && (
+                    {" with "}{show.alsoPlaying}
+                  )}
+                  {show.soldOut && (
+                    {" (sold out)"}
+                  )}
                 </PastShow>
               );
             } else {
               return (
                 <Show key={idx}>
-                  {showDate} - {show.text}{" "}
+                  {showDate} - {show.location}
+                  {show.alsoPlaying && (
+                    {" with "}{show.alsoPlaying}
+                  )}
+                  {show.soldOut && (
+                    {" (sold out)"}
+                  )}
                   {show.link && (
-                    <a href={show.link}>info</a>
+                    {" "}<a href={show.link}>info</a>
                   )}
                 </Show>
               );
