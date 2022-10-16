@@ -23,40 +23,42 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
-      text: "Moira, Utrecht with Hushed Hands",
-      link: "https://www.facebook.com/events/1605758329843165",
       date: "2022-10-22 21:00",
+      text: "Moira, Utrecht, with Hushed Hands",
+      link: "https://www.facebook.com/events/1605758329843165",
+
     },
     {
+      date: "2022-10-04 20:00",
       text: "dB's, Utrecht, support for Acid Mothers Temple (sold out)",
       link: "https://www.dbstudio.nl/event/acid-mothers-temple-japan/",
-      date: "2022-10-04 20:00",
+
     },
     {
+      date: "2022-03-25 20:30",
       text: "dB's, Utrecht, support for Vinyl Williams",
       link: "https://www.dbstudio.nl/event/vinyl-williams-usa-support/",
-      date: "2022-03-25 20:30",
     },
     {
-      text: "Vechtclub XL Bunker, Utrecht",
       date: "2022-03-05 20:30",
+      text: "Vechtclub XL Bunker, Utrecht",
     },
     {
-      text: "Living room concert, Utrecht with Coaster (sold out)",
       date: "2021-10-31 15:00",
+      text: "Living room concert, Utrecht, with Coaster (sold out)",
     },
     {
+      date: "2021-07-05 21:00",
       text: "Vechtclub XL, Utrecht (sold out)",
       link: "https://www.eventbrite.nl/e/tickets-podiumdorst-5-juli-moonwatch-160727691853",
-      date: "2021-07-05 21:00",
     },
     {
-      text: "Brewpub De Kromme Haring, Utrecht with Mevrouw Tamara",
       date: "2020-01-25 21:00",
+      text: "Brewpub De Kromme Haring, Utrecht, with Mevrouw Tamara",
     },
     {
-      text: "OPEN @ De Helling, Utrecht with Kittiwake",
       date: "2019-11-27 21:00",
+      text: "OPEN @ De Helling, Utrecht, with Kittiwake",
     },
   ];
   const today = dayjs();
@@ -66,18 +68,18 @@ const Shows = () => {
       {showList.length > 0 && (
         <ViewBox id="shows">
           <ViewHeader name="Shows"></ViewHeader>
-          {showList.slice(0.1).map((show, idx) => {
-            const showDate = dayjs(show.date, "YYYY-MM-DD HH:MM");
+          {showList.map((show, idx) => {
+            const showDate = dayjs(show.date, "YYYY-MM-DD HH:MM").format("ddd D MMMM YYYY HH:mm");
             if (showDate < today) {
               return (
                 <PastShow key={idx}>
-                  {showDate.format("ddd D MMMM YYYY HH:mm - ")} {show.text}
+                  {showDate} - {show.text}
                 </PastShow>
               );
             } else {
               return (
                 <Show key={idx}>
-                  {showDate.format("ddd D MMMM YYYY HH:mm - ")} {show.text}{" "}
+                  {showDate} - {show.text}{" "}
                   {show.link && (
                     <a href={show.link}>info</a>
                   )}
