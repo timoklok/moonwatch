@@ -24,16 +24,17 @@ const Shows = () => {
   const showList = [
     {
       text: "Moira, Utrecht with Hushed Hands",
+      link: "https://www.facebook.com/events/1605758329843165",
       date: "2022-10-22 21:00",
     },
     {
       text: "dB's, Utrecht, support for Acid Mothers Temple (sold out)",
-      ticketLink: "https://www.dbstudio.nl/event/acid-mothers-temple-japan/",
+      link: "https://www.dbstudio.nl/event/acid-mothers-temple-japan/",
       date: "2022-10-04 20:00",
     },
     {
       text: "dB's, Utrecht, support for Vinyl Williams",
-      ticketLink: "https://www.dbstudio.nl/event/vinyl-williams-usa-support/",
+      link: "https://www.dbstudio.nl/event/vinyl-williams-usa-support/",
       date: "2022-03-25 20:30",
     },
     {
@@ -46,8 +47,7 @@ const Shows = () => {
     },
     {
       text: "Vechtclub XL, Utrecht (sold out)",
-      ticketLink:
-        "https://www.eventbrite.nl/e/tickets-podiumdorst-5-juli-moonwatch-160727691853",
+      link: "https://www.eventbrite.nl/e/tickets-podiumdorst-5-juli-moonwatch-160727691853",
       date: "2021-07-05 21:00",
     },
     {
@@ -78,10 +78,8 @@ const Shows = () => {
               return (
                 <Show key={idx}>
                   {showDate.format("ddd D MMMM YYYY HH:mm - ")} {show.text}{" "}
-                  {show.ticketLink && (
-                    <a title="tickets" href={show.ticketLink}>
-                      tickets
-                    </a>
+                  {show.link && (
+                    <a href={show.link}>info</a>
                   )}
                 </Show>
               );
