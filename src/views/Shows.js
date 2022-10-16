@@ -76,11 +76,11 @@ const Shows = () => {
         <ViewBox id="shows">
           <ViewHeader name="Shows"></ViewHeader>
           {showList.map((show, idx) => {
-            const showDate = dayjs(show.date, "YYYY-MM-DD HH:MM").format("ddd D MMMM YYYY HH:mm");
+            const showDate = dayjs(show.date, "YYYY-MM-DD HH:MM");
             if (showDate < today) {
               return (
                 <PastShow key={idx}>
-                  {showDate} - {show.location}
+                  {showDate.format("ddd D MMMM YYYY HH:mm")} - {show.location}
                   {show.alsoPlaying && (
                     {" with "}{show.alsoPlaying}
                   )}
@@ -92,7 +92,7 @@ const Shows = () => {
             } else {
               return (
                 <Show key={idx}>
-                  {showDate} - {show.location}
+                  {showDate.format("ddd D MMMM YYYY HH:mm")} - {show.location}
                   {show.alsoPlaying && (
                     {" with "}{show.alsoPlaying}
                   )}
