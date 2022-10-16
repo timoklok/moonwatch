@@ -82,10 +82,10 @@ const Shows = () => {
                 <PastShow key={idx}>
                   {showDate.format("ddd D MMMM YYYY HH:mm")} - {show.location}
                   {show.alsoPlaying && (
-                    {" with "}{show.alsoPlaying}
+                    <span> with {show.alsoPlaying}</span>
                   )}
                   {show.soldOut && (
-                    {" (sold out)"}
+                    <span> (sold out)</span>
                   )}
                 </PastShow>
               );
@@ -94,13 +94,13 @@ const Shows = () => {
                 <Show key={idx}>
                   {showDate.format("ddd D MMMM YYYY HH:mm")} - {show.location}
                   {show.alsoPlaying && (
-                    {" with "}{show.alsoPlaying}
+                    <span> with {show.alsoPlaying}</span>
                   )}
                   {show.soldOut && (
-                    {" (sold out)"}
+                     <span> (sold out)</span>
                   )}
                   {show.link && (
-                    {" "}<a href={show.link}>info</a>
+                    <span> <a href={show.link}>info</a></span>
                   )}
                 </Show>
               );
