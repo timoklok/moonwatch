@@ -24,7 +24,7 @@ const Shows = () => {
   const showList = [
     {
       date: "2022-11-13 13:30",
-      location: "De Kromme Haring, Utrecht",
+      location: "Brewpub De Kromme Haring, Utrecht",
     },
     {
       date: "2022-10-22 21:00",
