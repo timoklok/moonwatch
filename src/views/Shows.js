@@ -23,6 +23,10 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
+      date: "2022-11-13 13:30",
+      location: "De Kromme Haring, Utrecht",
+    },
+    {
       date: "2022-10-22 21:00",
       location: "Moira, Utrecht",
       alsoPlaying: "Hushed Hands",
