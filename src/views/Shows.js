@@ -25,6 +25,7 @@ const Shows = () => {
     {
       date: "2022-11-13 13:30",
       location: "Brewpub De Kromme Haring, Utrecht",
+      link: "https://leguesswho.com/lineup/celestial-spaces-moonwatch",
     },
     {
       date: "2022-10-22 21:00",
