@@ -24,7 +24,7 @@ const Shows = () => {
   const showList = [
     {
       date: "2022-11-13 13:30",
-      location: "Brewpub De Kromme Haring, Utrecht",
+      location: "Brewpub De Kromme Haring, Utrecht with Fuzzy Dreamer, This Leo Sunrise, Holzkohle & Leah Rye",
       link: "https://leguesswho.com/lineup/celestial-spaces-moonwatch",
     },
     {
