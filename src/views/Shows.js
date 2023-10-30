@@ -23,6 +23,11 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
+      date: "2024-01-27 20:00",
+      location: "De Nijverheid, Utrecht with Thistle Sifter (album release show)",
+      link: "https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch",
+    },
+    {
       date: "2022-11-13 13:30",
       location: "Brewpub De Kromme Haring, Utrecht with Fuzzy Dreamer, This Leo Sunrise, Holzkohle & Leah Rye",
       link: "https://leguesswho.com/lineup/celestial-spaces-moonwatch",
