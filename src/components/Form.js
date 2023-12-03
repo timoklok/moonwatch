@@ -24,7 +24,8 @@ const ButtonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  input[type="text"] {
+  input[type="text"],
+  input[type="email"] {
     background-color: rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.8);
     margin-right: 10px;
@@ -64,24 +65,47 @@ const Form = ({
 }) => {
   return (
     <FormContainer
-      action="https://tinyletter.com/moonwatch"
+      action="https://band.us21.list-manage.com/subscribe/post?u=431ab732d5bb32f8b9136efce&amp;id=fd0c7a0a98&amp;f_id=0094e9e6f0"
       method="post"
-      target="popupwindow"
-      onsubmit="window.open('https://tinyletter.com/moonwatch', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+      id="mc-embedded-subscribe-form"
+      name="mc-embedded-subscribe-form"
+      className="validate"
+      target="_self"
+      noValidate=""
     >
-      <p>
-        <label labelfor="tlemail">{formText}</label>
-      </p>
-      <ButtonContainer>
-        <input
-          type="text"
-          name="email"
-          id="tlemail"
-          placeholder="Your email address..."
-        />
-        <input type="hidden" value="1" name="embed" />
-        <input type="submit" value="Subscribe" />
-      </ButtonContainer>
+      <p>{formText}</p>
+      <div id="mc_embed_signup">
+        <ButtonContainer id="mc_embed_signup_scroll">
+          <input
+            type="text"
+            name="EMAIL"
+            id="mce-EMAIL"
+            required=""
+            defaultValue=""
+            placeholder="Your email address..."
+          />
+
+          <div
+            aria-hidden="true"
+            style={{ position: "absolute", left: "-5000px" }}
+          >
+            {/* real people should not fill this in and expect good things -
+                do not remove this or risk form bot signups */}
+            <input
+              type="text"
+              name="b_431ab732d5bb32f8b9136efce_fd0c7a0a98"
+              tabIndex="-1"
+              defaultValue=""
+            />
+          </div>
+          <input
+            type="submit"
+            name="subscribe"
+            id="mc-embedded-subscribe"
+            value="Subscribe"
+          />
+        </ButtonContainer>
+      </div>
     </FormContainer>
   );
 };
