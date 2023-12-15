@@ -1,22 +1,42 @@
 import theme from "../theme/theme";
 import styled, { css } from "styled-components";
 import mq from "../utils/mq";
+import { motion } from "framer-motion";
 
-export const baseText = css`
+export const baseTitle = css`
   font-family: ${theme.fonts.mainFont};
   text-transform: uppercase;
   color: ${theme.textColor};
   font-size: ${theme.fontSizes.m};
   font-weight: 900;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 `;
 
-export const mediumText = css`
+export const mediumTitle = css`
   font-family: ${theme.fonts.mainFont};
   text-transform: uppercase;
   color: ${theme.textColor};
   font-size: ${theme.fontSizes.m};
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+`;
+
+export const baseText = css`
+  font-family: ${theme.fonts.mainFont};
+  /* text-transform: uppercase; */
+  color: ${theme.textColor};
+  font-size: ${theme.fontSizes.m};
+  font-weight: 900;
+  /* letter-spacing: 0.1rem; */
+`;
+
+export const mediumText = css`
+  font-family: ${theme.fonts.mainFont};
+  /* text-transform: uppercase; */
+  color: ${theme.textColor};
+  font-size: ${theme.fontSizes.m};
   font-weight: 500;
+  letter-spacing: 0.1rem;
 `;
 
 export const subText = css`
@@ -26,8 +46,9 @@ export const subText = css`
   font-weight: 100;
 `;
 
-export const Title = styled.h1`
+export const SiteTitle = styled(motion.h1)`
   ${baseText};
+  text-transform: uppercase;
   letter-spacing: 2rem;
   font-size: 2rem;
   max-width: 100%;
@@ -35,6 +56,7 @@ export const Title = styled.h1`
   text-align: center;
   text-indent: 1rem;
   margin-left: 2rem;
+  filter: none;
   ${mq.medium`
     text-indent: 0rem;
     margin-left: 0rem;
@@ -43,7 +65,7 @@ export const Title = styled.h1`
 `;
 
 export const Header = styled.h2`
-  ${baseText};
+  ${baseTitle};
   letter-spacing: 0.5rem;
   font-size: ${theme.fontSizes.l};
 `;
@@ -51,21 +73,22 @@ export const Header = styled.h2`
 export const Description = styled.div`
   ${mediumText};
   font-size: ${theme.fontSizes.sm};
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
   text-align: center;
 `;
 
-export const Kicker = styled.div`
+export const Kicker = styled(motion.div)`
   ${mediumText};
   display: flex;
   flex-direction: column;
   font-size: ${theme.fontSizes.xs};
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.15rem;
   text-align: center;
-  line-height: 1.8;
-
+  line-height: 1.4;
+  max-width: 500px;
+  filter: none;
   img {
-    width: 150px;
+    width: 250px;
   }
 
   span {

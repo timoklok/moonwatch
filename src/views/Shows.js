@@ -3,10 +3,10 @@ import ViewHeader from "../components/ViewHeader";
 import ViewBox from "../components/ViewBox";
 import dayjs from "dayjs";
 import styled, { css } from "styled-components";
-import { baseText } from "../components/Text";
+import { mediumText } from "../components/Text";
 
 const ShowCSS = css`
-  ${baseText};
+  ${mediumText};
   display: block;
   margin-bottom: 16px;
   text-align: center;
@@ -14,6 +14,7 @@ const ShowCSS = css`
 const PastShow = styled.span`
   ${ShowCSS}
   opacity: 0.4;
+  font-size: 1em;
 `;
 
 const Show = styled.span`
@@ -24,31 +25,33 @@ const Shows = () => {
   const showList = [
     {
       date: "2024-01-27 20:00",
-      location: "De Nijverheid, Utrecht with Thistle Sifter (album release show)",
+      location: "De Nijverheid, Utrecht",
+      details: "with Thistle Sifter (album release show)",
       link: "https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch",
     },
     {
       date: "2022-11-13 13:30",
-      location: "Brewpub De Kromme Haring, Utrecht with Fuzzy Dreamer, This Leo Sunrise, Holzkohle & Leah Rye",
+      location: "Brewpub De Kromme Haring, Utrecht",
+      details: "with Fuzzy Dreamer, This Leo Sunrise, Holzkohle & Leah Rye",
       link: "https://leguesswho.com/lineup/celestial-spaces-moonwatch",
     },
     {
       date: "2022-10-22 21:00",
       location: "Moira, Utrecht",
-      alsoPlaying: "Hushed Hands",
+      details: "with Hushed Hands",
       link: "https://www.facebook.com/events/1605758329843165",
     },
     {
       date: "2022-10-04 20:00",
       location: "dB's, Utrecht",
-      alsoPlaying: "Acid Mothers Temple",
+      details: "with Acid Mothers Temple",
       link: "https://www.dbstudio.nl/event/acid-mothers-temple-japan/",
       soldOut: true,
     },
     {
       date: "2022-03-25 20:30",
       location: "dB's, Utrecht",
-      alsoPlaying: "Vinyl Williams",
+      details: "with Vinyl Williams",
       link: "https://www.dbstudio.nl/event/vinyl-williams-usa-support/",
     },
     {
@@ -58,7 +61,7 @@ const Shows = () => {
     {
       date: "2021-10-31 15:00",
       location: "Living room concert, Utrecht",
-      alsoPlaying: "Coaster",
+      details: "with Coaster",
       soldOut: true,
     },
     {
@@ -70,12 +73,12 @@ const Shows = () => {
     {
       date: "2020-01-25 21:00",
       location: "Brewpub De Kromme Haring, Utrecht",
-      alsoPlaying: "Mevrouw Tamara",
+      details: "with Mevrouw Tamara",
     },
     {
       date: "2019-11-27 21:00",
       location: "De Helling, Utrecht",
-      alsoPlaying: "Kittiwake"
+      details: "with Kittiwake",
     },
   ];
   const today = dayjs();
@@ -91,26 +94,23 @@ const Shows = () => {
               return (
                 <PastShow key={idx}>
                   {showDate.format("ddd D MMMM YYYY HH:mm")} - {show.location}
-                  {show.alsoPlaying && (
-                    <span> with {show.alsoPlaying}</span>
-                  )}
-                  {show.soldOut && (
-                    <span> (sold out)</span>
-                  )}
+                  <br></br>
+                  {show.details && <span> {show.details}</span>}
+                  {show.soldOut && <span> (sold out)</span>}
                 </PastShow>
               );
             } else {
               return (
                 <Show key={idx}>
                   {showDate.format("ddd D MMMM YYYY HH:mm")} - {show.location}
-                  {show.alsoPlaying && (
-                    <span> with {show.alsoPlaying}</span>
-                  )}
-                  {show.soldOut && (
-                     <span> (sold out)</span>
-                  )}
+                  <br></br>
+                  {show.details && <span> {show.details}</span>}
+                  {show.soldOut && <span> (sold out)</span>}
                   {show.link && (
-                    <span> <a href={show.link}>info</a></span>
+                    <span>
+                      {" "}
+                      - <a href={show.link}>Tickets & info</a>
+                    </span>
                   )}
                 </Show>
               );

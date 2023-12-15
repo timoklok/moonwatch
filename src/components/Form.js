@@ -12,12 +12,11 @@ const FormContainer = styled.form`
    `}
 
   font-family: ${theme.fonts.mainFont};
-  text-transform: uppercase;
   color: ${theme.textColor};
   font-size: ${theme.fontSizes.m};
   font-weight: 500;
   font-size: ${theme.fontSizes.xs};
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1rem;
 `;
 
 const ButtonContainer = styled.div`

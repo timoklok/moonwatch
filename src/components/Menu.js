@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { baseText } from "../components/Text";
+import { baseText, mediumTitle } from "../components/Text";
 import mq from "../utils/mq";
 
 const MenuContainer = styled.div`
@@ -59,7 +59,7 @@ const MenuItem = styled.a`
   display: block;
   cursor: pointer;
   text-decoration: none;
-  ${baseText};
+  ${mediumTitle};
   line-height: 1.5;
   &:hover {
     text-decoration: underline;

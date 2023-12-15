@@ -8,7 +8,7 @@ import mq from "../utils/mq";
 
 const VideoWrapper = styled.div`
   align-self: center;
-  margin: 5vh 0;
+  margin: 2vh 0;
   text-align: left;
   align-self: flex-end;
   width: 100%;
@@ -17,6 +17,7 @@ const VideoWrapper = styled.div`
 
   ${mq.medium`
     width: 400px;
+    margin: 5vh 0;
    `}
 
   ${mq.large`

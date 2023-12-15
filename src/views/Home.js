@@ -1,6 +1,6 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 import styled from "styled-components";
-import { Title, Kicker } from "../components/Text";
+import { SiteTitle, Kicker } from "../components/Text";
 import Form from "../components/Form";
 import ViewBox from "../components/ViewBox";
 
@@ -14,7 +14,6 @@ import {
 
 const TitleContainer = styled(motion.div)`
   margin: 0vh 0;
-  filter: blur(4px);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -45,7 +44,7 @@ const Home = () => {
   const [titleTop, setTitleTop] = useState(0);
   const titleRef = useRef(null);
   const arrowRef = useRef(null);
-  const blurAmount = useTransform(scrollY, [0, titleTop], [0, 5]);
+  const blurAmount = useTransform(scrollY, [0, titleTop + 400], [0, 5]);
 
   const arrowOpacityAmount = useTransform(scrollY, [100, 200], [1, 0]);
 
@@ -68,22 +67,31 @@ const Home = () => {
 
   return (
     <ViewBox id="home">
-      <TitleContainer style={{ filter: titleBlur }} ref={titleRef}>
-        <Title>
+      <TitleContainer ref={titleRef}>
+        <SiteTitle style={{ filter: titleBlur }}>
           Moon
           <wbr />
           watch
-        </Title>
-        <Kicker>
-          <a title="listen to Kármán Line" href="#listen">
-            <img alt="Kármán Line cover" src="images/karman-line.jpg" />
+        </SiteTitle>
+        <Kicker style={{ filter: titleBlur }}>
+          <a
+            title="Album release tickets and info"
+            href="https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch"
+          >
+            <img alt="Album release poster" src="images/album-release-v2.jpg" />
           </a>
           <p>
-            Latest EP 'Kármán Line' <span>-</span> <a href="#listen">out now</a>
+            On Saturday January 27th, we'll celebrate the release of our first
+            album 'Myriad eyes \ Myriad Other' with a show at De Nijverheid,
+            Utrecht.
+            <br />
+            <a href="https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch">
+              Tickets and info
+            </a>
           </p>
         </Kicker>
         <FormContainer>
-          <Form formText="leave your email to occasionally receive emails about new releases and live shows:" />
+          <Form formText="Leave your email to occasionally receive emails about new releases and live shows:" />
         </FormContainer>
       </TitleContainer>
       <Arrow ref={arrowRef} style={{ opacity: arrowOpacityAmount }}>
