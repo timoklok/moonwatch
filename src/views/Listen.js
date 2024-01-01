@@ -42,7 +42,7 @@ const releases = [
   {
     title: "Lūmen (single) - 2024",
     shortTitle: "Lūmen",
-    cover: "lumen-cover.jpg",
+    cover: "lumen-cover.png",
     links: [
       {
         name: "Bandcamp",
