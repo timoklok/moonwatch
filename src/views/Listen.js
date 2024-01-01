@@ -40,6 +40,25 @@ const links = [
 
 const releases = [
   {
+    title: "Lūmen - 2021",
+    shortTitle: "Lūmen",
+    cover: "lumen-cover.jpg",
+    links: [
+      {
+        name: "Bandcamp",
+        url: "https://moonwatch.bandcamp.com/track/l-men",
+      },
+      {
+        name: "Spotify (pre-save)",
+        url: "https://distrokid.com/hyperfollow/moonwatch/lmen",
+      },
+      {
+        name: "YouTube",
+        url: "https://www.youtube.com/watch?v=xnlJhhpedwg",
+      },
+    ],
+  },
+  {
     title: "Kármán Line (EP) - 2021",
     shortTitle: "Kármán Line",
     cover: "karman-cover.jpg",
