@@ -40,7 +40,7 @@ const links = [
 
 const releases = [
   {
-    title: "Lūmen - 2024",
+    title: "Lūmen (single) - 2024",
     shortTitle: "Lūmen",
     cover: "lumen-cover.jpg",
     links: [
