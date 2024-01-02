@@ -49,8 +49,8 @@ const releases = [
         url: "https://moonwatch.bandcamp.com/track/l-men",
       },
       {
-        name: "Spotify (pre-save)",
-        url: "https://distrokid.com/hyperfollow/moonwatch/lmen",
+        name: "Spotify",
+        url: "https://open.spotify.com/album/4w2Ljlv29Ra9YqASd6phit",
       },
       {
         name: "YouTube",
