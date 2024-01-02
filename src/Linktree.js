@@ -43,12 +43,12 @@ const LinkList = [
     url: "https://www.youtube.com/watch?v=xnlJhhpedwg",
   },
   {
-    text: "Album release show tickets (De Nijverheid, Utrecht)",
+    text: "Album release show on January 27th at De Nijverheid, Utrecht",
     url: "https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch",
   },
   {
-    text: "Website",
-    url: "/",
+    text: "Moonwatch website",
+    url: "https://moonwatch.band",
   },
 ];
 
