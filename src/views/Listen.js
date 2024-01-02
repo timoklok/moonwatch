@@ -53,8 +53,20 @@ const releases = [
         url: "https://open.spotify.com/album/4w2Ljlv29Ra9YqASd6phit",
       },
       {
+        name: "Apple Music",
+        url: "https://music.apple.com/album/lūmen-single/1723743088",
+      },
+      {
         name: "YouTube",
         url: "https://www.youtube.com/watch?v=xnlJhhpedwg",
+      },
+      {
+        name: "Tidal",
+        url: "https://tidal.com/browse/album/337797334",
+      },
+      {
+        name: "Deezer",
+        url: "https://www.deezer.com/album/529811732",
       },
     ],
   },
