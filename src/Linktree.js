@@ -47,7 +47,7 @@ const LinkList = [
     url: "https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch",
   },
   {
-    text: "Join the newsletter for updates about releases and shows (no social media algorithms, ads or noise!)",
+    text: "Join the newsletter for updates about releases and shows",
     url: "https://mailchi.mp/a3918417976b/moonwatch-newsletter",
   },
   {
