@@ -71,8 +71,8 @@ const Form = ({
       noValidate=""
     >
       <p>{formText}</p>
-      <div id="mc_embed_signup">
-        <ButtonContainer id="mc_embed_signup_scroll">
+      <div>
+        <ButtonContainer>
           <input
             type="text"
             name="EMAIL"
