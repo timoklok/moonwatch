@@ -66,8 +66,6 @@ const Form = ({
     <FormContainer
       action="https://band.us21.list-manage.com/subscribe/post?u=431ab732d5bb32f8b9136efce&amp;id=fd0c7a0a98&amp;f_id=0094e9e6f0"
       method="post"
-      id="mc-embedded-subscribe-form"
-      name="mc-embedded-subscribe-form"
       className="validate"
       target="_self"
       noValidate=""
@@ -78,7 +76,6 @@ const Form = ({
           <input
             type="text"
             name="EMAIL"
-            id="mce-EMAIL"
             required=""
             defaultValue=""
             placeholder="Your email address..."
@@ -97,12 +94,7 @@ const Form = ({
               defaultValue=""
             />
           </div>
-          <input
-            type="submit"
-            name="subscribe"
-            id="mc-embedded-subscribe"
-            value="Subscribe"
-          />
+          <input type="submit" name="subscribe" value="Subscribe" />
         </ButtonContainer>
       </div>
     </FormContainer>
