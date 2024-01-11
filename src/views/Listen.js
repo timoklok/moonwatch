@@ -40,6 +40,29 @@ const links = [
 
 const releases = [
   {
+    title: "Myriad Eyes \\ Myriad Other (album) - 2024",
+    shortTitle: "Myriad Eyes \\ Myriad Other",
+    cover: "myriad-cover.png",
+    links: [
+      {
+        name: "Bandcamp",
+        url: "https://moonwatch.bandcamp.com/album/myriad-eyes-myriad-other",
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/album/5t8n09Woi0rv8pUTCeRX7N",
+      },
+      {
+        name: "Tidal",
+        url: "https://tidal.com/browse/album/339297933",
+      },
+      {
+        name: "Deezer",
+        url: "https://www.deezer.com/album/533286392",
+      },
+    ],
+  },
+  {
     title: "Lūmen (single) - 2024",
     shortTitle: "Lūmen",
     cover: "lumen-cover.png",
