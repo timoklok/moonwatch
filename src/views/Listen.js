@@ -53,12 +53,20 @@ const releases = [
         url: "https://open.spotify.com/album/5t8n09Woi0rv8pUTCeRX7N",
       },
       {
+        name: "Apple Music",
+        url: "https://music.apple.com/album/myriad-eyes-myriad-other/1725390979",
+      },
+      {
         name: "Tidal",
         url: "https://tidal.com/browse/album/339297933",
       },
       {
         name: "Deezer",
         url: "https://www.deezer.com/album/533286392",
+      },
+      {
+        name: "Amazon",
+        url: "https://music.amazon.com/albums/B0CRZ4M2T5",
       },
     ],
   },
@@ -90,6 +98,10 @@ const releases = [
       {
         name: "Deezer",
         url: "https://www.deezer.com/album/529811732",
+      },
+      {
+        name: "Amazon",
+        url: "https://music.amazon.com/albums/B0CR8S7XXW",
       },
     ],
   },
