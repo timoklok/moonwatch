@@ -86,6 +86,8 @@ export const Kicker = styled(motion.div)`
   text-align: center;
   line-height: 1.4;
   max-width: 500px;
+  min-width: 300px;
+  padding: 0 16px;
   filter: none;
   img {
     width: 250px;

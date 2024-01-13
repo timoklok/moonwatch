@@ -39,13 +39,20 @@ const FormContainer = styled.div`
   text-align: center;
 `;
 
+const KickerContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+`;
+
 const Home = () => {
   const { scrollY } = useViewportScroll();
   const [titleTop, setTitleTop] = useState(0);
   const titleRef = useRef(null);
   const arrowRef = useRef(null);
-  const blurAmount = useTransform(scrollY, [0, titleTop + 400], [0, 5]);
-
+  //const blurAmount = useTransform(scrollY, [0, titleTop + 400], [0, 5]);
+  const blurAmount = useTransform(scrollY, [0, titleTop + 400], [0, 0]);
   const arrowOpacityAmount = useTransform(scrollY, [100, 200], [1, 0]);
 
   // get Title offset on scroll
@@ -73,23 +80,41 @@ const Home = () => {
           <wbr />
           watch
         </SiteTitle>
-        <Kicker style={{ filter: titleBlur }}>
-          <a
-            title="Album release tickets and info"
-            href="https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch"
-          >
-            <img alt="Album release poster" src="images/album-release-v2.jpg" />
-          </a>
-          <p>
-            On Saturday January 27th, we'll celebrate the release of our first
-            album 'Myriad eyes \ Myriad Other' with a show at De Nijverheid,
-            Utrecht.
-            <br />
-            <a href="https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch">
-              Tickets and info
+        <KickerContainer>
+          <Kicker style={{ filter: titleBlur }}>
+            <a title="Listen to Myriad Eyes \ Myriad Other" href="#listen">
+              <img
+                alt="Myriad Eyes \ Myriad Other Album cover"
+                src="images/MYMO-cover.png"
+              />
             </a>
-          </p>
-        </Kicker>
+            <p>
+              Our first album 'Myriad eyes \ Myriad Other' is out now!
+              <br />
+              <a href="#listen">Listen</a>
+            </p>
+          </Kicker>
+          <Kicker style={{ filter: titleBlur }}>
+            <a
+              title="Album release tickets and info"
+              href="https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch"
+            >
+              <img
+                alt="Album release poster"
+                src="images/album-release-v2.jpg"
+              />
+            </a>
+            <p>
+              On Saturday January 27th, we'll celebrate the release of our first
+              album 'Myriad eyes \ Myriad Other' with a show at De Nijverheid,
+              Utrecht.
+              <br />
+              <a href="https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch">
+                Tickets and info
+              </a>
+            </p>
+          </Kicker>
+        </KickerContainer>
         <FormContainer>
           <Form formText="Leave your email to occasionally receive emails about new releases and live shows:" />
         </FormContainer>
