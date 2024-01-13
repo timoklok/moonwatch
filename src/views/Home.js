@@ -44,6 +44,8 @@ const KickerContainer = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  align-items: baseline;
+  justify-content: center;
 `;
 
 const Home = () => {

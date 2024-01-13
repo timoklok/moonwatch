@@ -85,7 +85,7 @@ export const Kicker = styled(motion.div)`
   letter-spacing: 0.15rem;
   text-align: center;
   line-height: 1.4;
-  max-width: 500px;
+  max-width: 350px;
   min-width: 300px;
   padding: 0 16px;
   filter: none;
