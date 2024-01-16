@@ -34,6 +34,11 @@ const Shows = () => {
       link: "https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch",
     },
     {
+      date: "2024-01-13 20:30",
+      location: "Vechtclub XL bunker, Utrecht",
+      details: "album release show try-out with NEEF",
+    },
+    {
       date: "2022-11-13 13:30",
       location: "Brewpub De Kromme Haring, Utrecht",
       details: "with Fuzzy Dreamer, This Leo Sunrise, Holzkohle & Leah Rye",
