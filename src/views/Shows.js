@@ -35,7 +35,7 @@ const Shows = () => {
     },
     {
       date: "2024-01-13 20:30",
-      location: "Vechtclub XL bunker, Utrecht",
+      location: "Vechtclub XL Bunker, Utrecht",
       details: "album release show try-out with NEEF",
     },
     {
