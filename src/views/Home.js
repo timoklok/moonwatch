@@ -86,34 +86,31 @@ const Home = () => {
           <Kicker style={{ filter: titleBlur }}>
             <a title="Listen to Myriad Eyes \ Myriad Other" href="#listen">
               <img
-                alt="Myriad Eyes \ Myriad Other Album cover"
+                alt="Myriad Eyes \ Myriad Other album cover"
                 src="images/MYMO-cover.png"
               />
             </a>
             <p>
               Our first album 'Myriad eyes \ Myriad Other' is out now!
               <br />
-              <a href="#listen">Listen</a>
+              <a href="#listen">Listen online</a>
             </p>
           </Kicker>
           <Kicker style={{ filter: titleBlur }}>
             <a
-              title="Album release tickets and info"
-              href="https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch"
+              title="Full-size album cover"
+              href="https://f4.bcbits.com/img/a4272210642_10.jpg"
+              target="_blank"
             >
               <img
-                alt="Album release poster"
-                src="images/album-release-v2.jpg"
+                alt="Myriad Eyes \ Myriad Other cd"
+                src="images/MYMO-cd.png"
               />
             </a>
             <p>
-              On Saturday January 27th, we'll celebrate the release of our first
-              album 'Myriad eyes \ Myriad Other' with a show at De Nijverheid,
-              Utrecht.
+              Get the beautiful foldout cd with lyrics!
               <br />
-              <a href="https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch">
-                Tickets and info
-              </a>
+              <a href="mailto:hello@moonwatch.band?subject=Moonwatch cd&body=Hi,%0D%0A%0D%0AI would like to order the Myriad Eyes \ Myriad Other cd. Here is my address:%0D%0A%0D%0AYOUR ADDRESS HERE%0D%0A%0D%0APlease send me a quote with shipping.">Send us an email</a> to order. You can also order via <a href="https://moonwatch.bandcamp.com/album/myriad-eyes-myriad-other">Bandcamp</a> or visit <a href="https://www.platomania.nl/store/id/11/">Plato Utrecht</a> to buy it.
             </p>
           </Kicker>
         </KickerContainer>
