@@ -99,7 +99,7 @@ const Home = () => {
           <Kicker style={{ filter: titleBlur }}>
             <a
               title="Full-size album cover"
-              href="https://f4.bcbits.com/img/a4272210642_10.jpg"
+              href="https://f4.bcbits.com/img/0034877721_10.jpg"
               target="_blank"
             >
               <img
