@@ -101,6 +101,7 @@ const Home = () => {
               title="Full-size album cover"
               href="https://f4.bcbits.com/img/0034877721_10.jpg"
               target="_blank"
+              rel="noreferrer"
             >
               <img
                 alt="Myriad Eyes \ Myriad Other cd"
