@@ -24,10 +24,6 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
-      date: "2024-04-01 20:00",
-      location: "TBA",
-    },
-    {
       date: "2024-01-27 20:00",
       location: "De Nijverheid, Utrecht",
       details: "with Thistle Sifter (album release show)",
