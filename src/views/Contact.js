@@ -116,7 +116,10 @@ const Contact = () => {
               <img alt="3" src="images/hielke.jpeg" />
             </MemberImage>
             <MemberImage>
-              <img alt="4" src="images/timo.jpeg" />
+              <img alt="4" src="images/nils.jpeg" />
+            </MemberImage>
+            <MemberImage>
+              <img alt="5" src="images/timo.jpeg" />
             </MemberImage>
           </MemberImages>
           <Members>
@@ -127,6 +130,8 @@ const Contact = () => {
             </BandName>
             <br />
             <BandNames>
+              Nils Breunese
+              <br />
               Yvet Youssef
               <br />
               Gerben van ‘t Hag
