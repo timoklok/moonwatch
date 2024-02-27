@@ -111,7 +111,7 @@ const Home = () => {
             <p>
               Get the beautiful foldout cd with lyrics!
               <br />
-              <a href="mailto:hello@moonwatch.band?subject=Moonwatch cd&body=Hi,%0D%0A%0D%0AI would like to order the Myriad Eyes \ Myriad Other cd. Here is my address:%0D%0A%0D%0AYOUR ADDRESS HERE%0D%0A%0D%0APlease send me a quote with shipping.">Send us an email</a> to order. You can also order via <a href="https://moonwatch.bandcamp.com/album/myriad-eyes-myriad-other">Bandcamp</a> or visit <a href="https://www.platomania.nl/store/id/11/">Plato Utrecht</a> to buy it.
+              <a href="mailto:hello@moonwatch.band?subject=Moonwatch cd&body=Hi,%0D%0A%0D%0AI would like to order the Myriad Eyes \ Myriad Other cd. Here is my address:%0D%0A%0D%0AYOUR ADDRESS HERE%0D%0A%0D%0APlease send me a quote with shipping.">Send us an email</a> to order. You can also order via <a href="https://moonwatch.bandcamp.com/album/myriad-eyes-myriad-other">Bandcamp</a> or get it at <a href="https://www.platomania.nl/store/id/11/">Plato Utrecht</a>.
             </p>
           </Kicker>
         </KickerContainer>
