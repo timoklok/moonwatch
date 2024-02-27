@@ -24,6 +24,11 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
+      date: "2024-05-11 20:00",
+      location: "Popradar Radarcafé, Den Haag",
+      details: "with Machina",
+    },
+    {
       date: "2024-01-27 20:00",
       location: "De Nijverheid, Utrecht",
       details: "with Thistle Sifter (album release show)",
