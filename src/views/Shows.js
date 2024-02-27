@@ -31,7 +31,7 @@ const Shows = () => {
     {
       date: "2024-01-27 20:00",
       location: "De Nijverheid, Utrecht",
-      details: "Myriad Eyes \\ Myriad Other album release show with Thistle Sifter",
+      details: "Myriad Eyes \\ Myriad Other album release show with Thistle Sifter (sold out)",
       link: "https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch",
     },
     {
