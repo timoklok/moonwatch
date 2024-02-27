@@ -91,7 +91,7 @@ const Home = () => {
               />
             </a>
             <p>
-              Our first album 'Myriad eyes \ Myriad Other' is out now!
+              Our first album <i>Myriad eyes \ Myriad Other</i> is out now!
               <br />
               <a href="#listen">Listen online</a>
             </p>
