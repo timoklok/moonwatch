@@ -60,7 +60,7 @@ const ButtonContainer = styled.div`
 `;
 
 const Form = ({
-  formText = "Subscribe to our e-mail newsletter to receive info about new releases, live shows and other Moonwatch news:",
+  formText = "Subscribe to the Moonwatch newsletter to receive info about new releases, live shows and other news:",
 }) => {
   return (
     <FormContainer

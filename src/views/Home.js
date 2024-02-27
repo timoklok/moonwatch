@@ -116,7 +116,7 @@ const Home = () => {
           </Kicker>
         </KickerContainer>
         <FormContainer>
-          <Form formText="Leave your email to occasionally receive emails about new releases and live shows:" />
+          <Form formText="Subscribe to the Moonwatch newsletter to receive info about new releases, live shows and other news:" />
         </FormContainer>
       </TitleContainer>
       <Arrow ref={arrowRef} style={{ opacity: arrowOpacityAmount }}>
