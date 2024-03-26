@@ -28,7 +28,6 @@ const Shows = () => {
       location: "Popradar Radarcafé, Den Haag",
       details: "with Machina (21:00)",
       link: "https://site.popradar.nl/article/1347/moonwatch-machina",
-      tickets: false,
     },
     {
       date: "2024-01-27 20:00",
@@ -40,7 +39,6 @@ const Shows = () => {
       date: "2024-01-13 20:30",
       location: "Vechtclub XL Bunker, Utrecht",
       details: "album release show try-out with NEEF",
-      tickets: false,
     },
     {
       date: "2022-11-13 13:30",
@@ -76,7 +74,6 @@ const Shows = () => {
       location: "Living room concert, Utrecht",
       details: "with Coaster",
       soldOut: true,
-      tickets: false,
     },
     {
       date: "2021-07-05 21:00",
@@ -123,7 +120,7 @@ const Shows = () => {
                   {show.link && (
                     <span>
                       {" "}
-                      - <a href={show.link}>{show.tickets && tickets & }info</a>
+                      - <a href={show.link}>info</a>
                     </span>
                   )}
                 </Show>
