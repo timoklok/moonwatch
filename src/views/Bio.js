@@ -47,7 +47,7 @@ const Bio = () => {
       <Bandphoto alt="moonwatch bandphoto" src="images/moonwatchband-new.jpg" />
 
       <MainDescription1>
-        Moonwatch plays celestial dream pop indie rock, merging spellbinding melodies
+        Moonwatch plays celestial dream pop shoegaze indie rock, merging spellbinding melodies
         with psychedelic reverb-drenched textures to convey the moods of the night sky.
         {
           // eslint-disable-next-line
@@ -56,7 +56,7 @@ const Bio = () => {
       </MainDescription1>
       <MainDescription2>
         Ethereal vocals, echoing guitars, lush synth pads.
-        They've been listening to bands like Slowdive, The War on Drugs and Warpaint.
+        They've been listening to bands like Slowdive, The War on Drugs, Low and Warpaint.
         Moonwatch don’t know where they’ll land, but the journey there has
         mesmerizing views.
       </MainDescription2>
