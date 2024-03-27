@@ -39,12 +39,16 @@ const Link = styled.a`
 
 const LinkList = [
   {
+    text: "Show on May 11th at Popradar Radarcafé, Den Haag, NL",
+    url: "https://site.popradar.nl/article/1347/moonwatch-machina",
+  },
+  {
     text: "Video for single Lūmen",
     url: "https://www.youtube.com/watch?v=xnlJhhpedwg",
   },
   {
-    text: "Album release show on January 27th at De Nijverheid, Utrecht",
-    url: "https://www.denijverheid.org/agenda/3079-dubbele-album-release-show-thistle-sifter-moonwatch",
+    text: "Moonwatch on Spotify",
+    url: "https://open.spotify.com/artist/5coFecXXAxcu5mDy8m440V",
   },
   {
     text: "Join the newsletter for updates about releases and shows",
