@@ -57,7 +57,7 @@ const releases = [
         url: "https://music.apple.com/album/myriad-eyes-myriad-other/1725390979",
       },
       {
-        name: "Youtube",
+        name: "YouTube",
         url: "https://www.youtube.com/playlist?list=PLDly_aBW4C5MldMnQF15mqFakqweZaDLZ",
       },
       {
