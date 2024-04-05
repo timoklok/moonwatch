@@ -30,6 +30,11 @@ const Shows = () => {
       link: "https://site.popradar.nl/article/1347/moonwatch-machina",
     },
     {
+      date: "2024-05-10 20:00",
+      location: "Moira, Utrecht",
+      details: "with Zilaida"
+    },
+    {
       date: "2024-01-27 20:00",
       location: "De Nijverheid, Utrecht",
       details: "Myriad Eyes \\ Myriad Other album release show with Thistle Sifter (sold out)",
