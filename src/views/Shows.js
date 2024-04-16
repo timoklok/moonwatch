@@ -36,6 +36,7 @@ const Shows = () => {
     },
     {
       date: "2024-05-10",
+      time: "20:30",
       location: "Moira, Utrecht",
       details: "with Zilaida",
     },
