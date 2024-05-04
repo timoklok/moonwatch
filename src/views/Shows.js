@@ -25,6 +25,7 @@ const Shows = () => {
   const showList = [
     {
       date: "2024-05-24",
+      time: "20:00",
       location: "De Superette, Wageningen",
     },
     {
