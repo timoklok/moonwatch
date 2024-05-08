@@ -34,7 +34,7 @@ const Shows = () => {
       time: "22:30",
       location: "Popradar Radarcafé, Den Haag",
       details: "with Machina (21:00)",
-      link: "https://site.popradar.nl/article/1347/moonwatch-machina",
+      link: "https://www.popradar.nl/article/1347/moonwatch-machina",
     },
     {
       date: "2024-05-10",
