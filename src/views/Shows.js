@@ -27,6 +27,7 @@ const Shows = () => {
       date: "2024-05-24",
       time: "20:00",
       location: "De Superette, Wageningen",
+      link: "https://desuperette.nl/event/live-moonwatch",
     },
     {
       date: "2024-05-11",
@@ -40,6 +41,7 @@ const Shows = () => {
       time: "20:30",
       location: "Moira, Utrecht",
       details: "with Zilaida",
+      link: "https://moira-utrecht.nl/news/events/zilaida-moonwatch/",
     },
     {
       date: "2024-01-27",
