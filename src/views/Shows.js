@@ -117,7 +117,7 @@ const Shows = () => {
       details: "with Kittiwake",
     },
   ];
-  const today = dayjs();
+  const today = dayjs().startOf('day');
 
   return (
     <>
