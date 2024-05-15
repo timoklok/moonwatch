@@ -24,6 +24,10 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
+      date: "2024-09-20",
+      location: "Trapop!, Utrecht",
+    },
+    {
       date: "2024-05-24",
       time: "20:00",
       location: "De Superette, Wageningen",
