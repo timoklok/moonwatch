@@ -25,6 +25,10 @@ const links = [
     url: "https://www.youtube.com/@moonwatchband",
   },
   {
+    name: "YouTube Music",
+    url: "https://music.youtube.com/channel/UCinPuwCv_t32ANIKOY0Rnng",
+  },
+  {
     name: "Tidal",
     url: "https://tidal.com/browse/artist/16356830",
   },
@@ -131,6 +135,10 @@ const releases = [
         url: "https://www.youtube.com/watch?v=sESwaH5IX5I&list=PLDly_aBW4C5OqvvyT25Fwgs6Fx4SiXMx5",
       },
       {
+        name: "YouTube Music",
+        url: "https://music.youtube.com/playlist?list=OLAK5uy_m2cqxT3qH9UkKmROStanWkorI3jlmkIgI",
+      },
+      {
         name: "Tidal",
         url: "https://tidal.com/browse/album/197680815",
       },
@@ -164,6 +172,10 @@ const releases = [
       {
         name: "YouTube",
         url: "https://www.youtube.com/watch?v=vuMxCRZ43vY&list=PLDly_aBW4C5MFfHgDACt_-0rMiez0MiQJ",
+      },
+      {
+        name: "YouTube Music",
+        url: "https://music.youtube.com/playlist?list=OLAK5uy_kzVKl9W9cYYeKVuILA-YLAeU3wJkQEIOg",
       },
       {
         name: "Tidal",
