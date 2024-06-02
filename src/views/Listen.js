@@ -65,6 +65,10 @@ const releases = [
         url: "https://www.youtube.com/playlist?list=PLDly_aBW4C5MldMnQF15mqFakqweZaDLZ",
       },
       {
+        name: "YouTube Music",
+        url: "https://music.youtube.com/playlist?list=OLAK5uy_nYVe4iXhbURKO22UE8eRMc_8RUBubloK0&si=S5GNAW9UF9mtPKYx",
+      },
+      {
         name: "Tidal",
         url: "https://tidal.com/browse/album/339297933",
       },
