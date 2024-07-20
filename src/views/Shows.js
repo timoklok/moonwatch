@@ -25,7 +25,9 @@ const Shows = () => {
   const showList = [
     {
       date: "2024-09-20",
+      time: "21:30",
       location: "Trapop!, Utrecht",
+      link: "https://www.trapoputrecht.nl/programma/#calendar-8e07b0d2-a2c7-4fe9-8efb-beefc7465421-event-lwughmvq",
     },
     {
       date: "2024-05-24",
