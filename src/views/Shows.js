@@ -25,7 +25,7 @@ const Shows = () => {
   const showList = [
     {
       date: "2024-09-28",
-      time: "23:15",
+      time: "22:45",
       location: "Centraal Wonen Het Punt, Wageningen",
     },
     {
