@@ -14,7 +14,7 @@ const social_media_links = [
   { name: "Facebook", url: "https://www.facebook.com/moonwatch.band" },
   { name: "Instagram", url: "https://www.instagram.com/moonwatch.band/" },
   { name: "Threads", url: "https://www.threads.net/@moonwatch.band" },
-  { name: "X/Twitter", url: "https://x.com/moonwatchband" },
+  { name: "X", url: "https://x.com/moonwatchband" },
 ];
 
 const ContentContainer = styled.div`
