@@ -10,7 +10,7 @@ import mq from "../utils/mq";
 const email_links = [{ name: "E-mail", url: "mailto:hello@moonwatch.band" }];
 
 const social_media_links = [
-  { name: "Bluesky", url: "https://bsky.app/profile/moonwatchband.bsky.social" },
+  { name: "Bluesky", url: "https://bsky.app/profile/moonwatch.band" },
   { name: "Facebook", url: "https://www.facebook.com/moonwatch.band" },
   { name: "Instagram", url: "https://www.instagram.com/moonwatch.band/" },
   { name: "Threads", url: "https://www.threads.net/@moonwatch.band" },
