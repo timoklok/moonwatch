@@ -24,6 +24,13 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
+      date: "2025-02-06",
+      time: "19:30",
+      location: "Brewpub De Kromme Haring, Utrecht",
+      details: "with This Leo Sunrise",
+      link: "https://www.last.fm/event/4890589+This+Leo+Sunrise+&+Moonwatch",
+    },
+    {
       date: "2024-09-28",
       time: "22:45",
       location: "Centraal Wonen Het Punt, Wageningen",
