@@ -12,7 +12,8 @@ const email_links = [{ name: "E-mail", url: "mailto:hello@moonwatch.band" }];
 const social_media_links = [
   { name: "Bluesky", url: "https://bsky.app/profile/moonwatch.band" },
   { name: "Facebook", url: "https://www.facebook.com/moonwatch.band" },
-  { name: "Instagram", url: "https://www.instagram.com/moonwatch.band/" },
+  { name: "Instagram", url: "https://www.instagram.com/moonwatch.band" },
+  { name: "Pixelfed", url: "https://pixelfed.social/moonwatch.band" },
   { name: "Threads", url: "https://www.threads.net/@moonwatch.band" },
   { name: "X", url: "https://x.com/moonwatchband" },
 ];
