@@ -24,6 +24,12 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
+      date: "2025-04-19",
+      location: "Beton-T, Utrecht",
+      details: "at Beton-T Stadsfestival",
+      link: "https://www.vechtclub.nl/agenda/beton-t-stadsfestival/",
+    },
+    {
       date: "2025-02-06",
       time: "19:30",
       location: "Brewpub De Kromme Haring, Utrecht",
