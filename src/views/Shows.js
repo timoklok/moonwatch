@@ -27,7 +27,7 @@ const Shows = () => {
       date: "2025-04-19",
       time: "17:30",
       location: "Beton-T, Utrecht",
-      details: "at Beton-T Stadsfestival",
+      details: "at Beton-T Stadsfestival (free)",
       link: "https://www.vechtclub.nl/agenda/beton-t-stadsfestival/",
     },
     {
