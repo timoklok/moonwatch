@@ -24,6 +24,11 @@ const Show = styled.span`
 const Shows = () => {
   const showList = [
     {
+      date: "2026-01-17",
+      location: "Bocholt, Germany",
+      details: "with Awash",
+    },
+    {
       date: "2025-04-19",
       time: "17:30",
       location: "Beton-T, Utrecht",
