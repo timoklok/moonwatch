@@ -25,8 +25,10 @@ const Shows = () => {
   const showList = [
     {
       date: "2026-01-17",
-      location: "Bocholt, Germany",
+      time: "20:00",
+      location: "Kulturort Alte Molkerei, Bocholt, Germany",
       details: "with Awash",
+      link: "https://alte-molkerei.info/event/indie-dreampop-night-awash-support-moonwatch/"
     },
     {
       date: "2025-04-19",
